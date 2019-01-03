@@ -1,0 +1,60 @@
+<?php
+	//echo("THIS IS A TEST");	
+	//formaction="not-now.php"
+	//formaction="showSignUp.php"
+?>
+<script>
+function createCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+}
+
+function signUpNotNow() {
+	document.getElementById("colorbox").style.visibility= "hidden";
+	document.getElementById("cboxOverlay").style.visibility= "hidden" ;
+	
+	console.log("NOT NOW CLICKED");
+	
+	//set the cookie
+	this.createCookie('cci_portal_newsletter_signed_up','NO',1);
+}
+
+function signUpNow() {
+	console.log("SIGN UP CLICKED");
+}
+
+	function openColorBox(){
+		$.colorbox({iframe:false, width:"80%", height:"80%", href: "http://www.sitepoint.com"});
+	  }
+	  
+	  if(!$.cookie("colorboxShown")){
+		openColorBox();
+		$.cookie('colorboxShown', true, { expires: 1, path: '/' });
+	  }
+</script>
+<div>
+<h2>Subscribe</h2><br/>
+<p>Oh... I see you have not signed up to our newsletter, would you like to do this now?</p>
+</div>
+<button type="submit" name="signup" onClick="javascript:signUpNow();">Yes, I would like to subscribe</button>
+<button type="submit" name="notnow" onClick="javscript:signUpNotNow();">No not now</button>

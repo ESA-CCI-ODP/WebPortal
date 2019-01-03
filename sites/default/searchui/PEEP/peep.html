@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<HTML xmlns='http://www.w3.org/1999/xhtml'>
+<HEAD>
+
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+
+<!--  all peep styles are loaded by includes contained in main.css -->
+<link rel='stylesheet' type='text/css' href='css/main.css' />
+<link rel="icon" href="favicon.ico">
+<!-- Later we need to look at alternative css styles for different media -
+     This is possibly best done in the meta-css loader files.
+     See the @import rule description at http://www.w3.org/TR/CSS2/cascade.html for more info
+<link rel='stylesheet' type='text/css' href='/css/printer.css' media='print' />
+-->
+
+<script type="text/javascript">
+ var dojoConfig = {
+                    dojoBlankHtmlUrl:     'blank.html'
+                  , parseOnLoad:          false
+                  , useXDomain:           true
+                  , preventBackButtonFix: false
+                  , baseUrl:              './'
+                  , paths:                {
+                                            peep: 'js/peep'
+                                          }
+                  , isDebug:              false
+                  , locale:               'en-gb'
+                  , require:              ['peep/init']
+};
+</script>
+<!-- OK we're ready ... invoke the dojo loader for the rest of the control software -->
+
+<!-- North America -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js"></script>
+<!-- Europe -->
+<!-- <script type="text/javascript" src="http://yandex.st/dojo/1.9.1/dojo/dojo.js"></script> -->
+
+<!-- North America Debugging -->
+<!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js.uncompressed.js"></script> -->
+<!-- Europe Debugging -->
+<!--<script type="text/javascript" src="http://yandex.st/dojo/1.9.1/dojo/dojo.js.uncompressed.js"></script> -->
+
+<!-- load up the Markdown parser used by the help sub-system -->
+<script type="text/javascript" src="js/markdown/showdown.js"></script>
+
+<!-- load up the external mapping libraries -->
+<script type="text/javascript" src="js/OpenLayers/OpenLayers-2.10.js"></script>
+<script type="text/javascript" src="js/OpenLayers/WMS1_1_1.js"></script>
+<script type="text/javascript" src="js/OpenLayers/WMS1_3.js"></script>
+<script type="text/javascript" src="js/OpenLayers/polarLayer.js"></script>
+<!-- At this point you may want to insert a line loading the Google Maps API -->
+<!-- I didn't ... -->
+
+<title>CCI Viewer</title>
+</HEAD>
+<BODY class='peep' >  
+<div id="loader">
+  <div id='innerLoader'>
+    <br /><br /><center><h4 class='centerp dark_red'>Loading</h4></center>
+  </div>
+</div>
+
+<div id='wrapper'>
+  <div id='banner'>
+    <img class='banner_img' src='images/SYS/CCI_PeepHeader_1200.png' />
+  </div>
+  
+  <div  id='contents' data-dojo-id='contents'
+        data-dojo-type='dijit/layout/BorderContainer' 
+        data-dojo-props="design: 'sidebar', gutters: false, liveSplitters: true " >
+    <div class='leftSideBar'>
+      <div  id='leftSideBar' data-dojo-id='leftSideBar' class='leftSideBar'
+            data-dojo-type='dojox/layout/ExpandoPane' 
+            title=' '
+            data-dojo-props="region: 'left', startExpanded: true, splitter: true " >
+        <div  id='mainMenuBar' data-dojo-id='mainMenuBar' 
+              data-dojo-type='dijit/layout/ContentPane' >
+          <div  id='optionsMenu' data-dojo-id='optionsMenu' 
+              data-dojo-type='dijit/layout/AccordionContainer' >
+            <div  id='dateSelector' data-dojo-id='dateSelector'
+                  data-dojo-type="dijit/layout/ContentPane" 
+                  title=' '>
+            </div>
+            <div  id='layerSelector' data-dojo-id='layerSelector'
+                  data-dojo-type="dijit/layout/ContentPane"
+                  title=' '
+                  selected="true">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  id='rightSideBar' data-dojo-id='rightSideBar' class='rightSideBar'
+          data-dojo-type='dojox/layout/ExpandoPane' 
+          data-dojo-props="region: 'right', startExpanded:false, splitter: true " >
+          <div  id='scaleContainer' data-dojo-id='scaleContainer'
+                data-dojo-type="dijit/layout/ContentPane" >
+          </div>
+    </div>
+    <div  id='innerPane' data-dojo-id='innerPane' 
+          data-dojo-type='dijit/layout/ContentPane' 
+          data-dojo-props="region: 'center'">
+      <div  id='mainContents' data-dojo-id='mainContents' 
+            data-dojo-type='dijit/layout/BorderContainer'
+            data-dojo-props="design: 'headline', gutters: 'false'">
+        <div  id='permaHead' data-dojo-id='permaHead' 
+              data-dojo-type='dijit/layout/ContentPane' 
+              data-dojo-props="region: 'top'">  
+          <div id='statusLayer'>&nbsp;</div>
+          <div id='helpButton' class='helpButton' onClick='peepHelpPopup.handler("index")'>
+            <img src='images/HELP/helpButton.png' />
+          </div>
+        </div>
+        <div  id='permaFoot' data-dojo-id='permaFoot' 
+              data-dojo-type='dijit/layout/ContentPane' 
+              data-dojo-props="region: 'bottom'">  
+              <div id='statusTime'   >&nbsp;</div>
+              <div id='statusLatLon' >&nbsp;</div>              
+        </div>
+        <div  id='mapContainer' data-dojo-id='mapContainer' 
+              data-dojo-type='dijit/layout/ContentPane' 
+              data-dojo-props="region: 'center'" 
+              class='centerp'>   
+          <div id="throbber" class='absCenterDiv'><img src='images/SYS/generic/wait.gif' /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Everything below this point is kinda floating' in one way or another -->
+<!-- these are message toasters - slide in/out entities -->
+<div id='systemError' data-dojo-id='systemError' 
+                      data-dojo-type='dojox/widget/Toaster' 
+                      data-dojo-props="duration: '0', messageTopic: '/peep/sysError', positionDirection: 'br-up'"
+                      class='lightFont tinyFont' ></div>
+<div id='systemMessage' data-dojo-id='systemMessage' 
+                        data-dojo-type='dojox/widget/Toaster' 
+                        data-dojo-props="duration: '0', messageTopic: '/peep/sysMessage', positionDirection: 'tr-down'"
+                        class='lightFont tinyFont' ></div>
+<!-- this is the container for a widget indicating current status (dunno if I'll use this yet) -->
+<div id='peepStatus' data-dojo-id='peepStatus' data-dojo-type='dijit/layout/ContentPane'></div>
+<!-- create the common popup dialog -->
+<div id='peepGeneralPopup' data-dojo-id='peepGeneralPopup' data-dojo-type='dijit/Dialog' title='' href=''></div>
+<!-- create the help popup dialog -->
+<div id='peepHelpPopup' data-dojo-id='peepHelpPopup' data-dojo-type='peep/widget/helpDialog' title='' ></div>
+<!-- create the data popup dialog -->
+<div id='peepDataPopup' data-dojo-id='peepDataPopup' data-dojo-type='peep/widget/dataDialog' title='' ></div>
+<!-- create the palette selection popup dialog -->
+<div id='peepPalettePopup' data-dojo-id='peepPalettePopup' data-dojo-type='peep/widget/paletteSelector' title='' ></div>
+<!-- create the overlay container -->
+<div class="map" id="mapOverlayDiv"><img id="mapOverlay" alt="map overlay" /></div>
+
+</BODY>
+</HTML>

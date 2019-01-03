@@ -1,0 +1,5 @@
+<!--MD-->
+###Status Line - Coordinate Display
+
+Displays the current 'geographical location' of the cursor if it is within the map viewport,
+otherwise it displays the last valid location (i.e. the point at which the mouse left the viewport.

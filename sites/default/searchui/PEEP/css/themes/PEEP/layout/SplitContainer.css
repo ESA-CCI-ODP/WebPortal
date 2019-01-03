@@ -1,0 +1,35 @@
+.peep .dijitSplitContainerSizerH {
+	background:url("../images/splitContainerSizerV.png") repeat-y #fff;
+	border:0;
+	border-left:1px solid #a1a1a1;
+	border-right:1px solid #a1a1a1;
+	width:7px;
+}
+
+.peep .dijitSplitContainerSizerH .thumb {
+	background:url("../images/splitContainerSizerV-thumb.png") no-repeat #ccc;
+	left:1px;
+	width:3px;
+	height:19px;
+	overflow: hidden;
+}
+
+.peep .dijitSplitContainerSizerV {
+	background:url("../images/splitContainerSizerH.png") repeat-x #fff;
+	border:0;
+	border-top:1px solid #a1a1a1;
+	border-bottom:1px solid #a1a1a1;
+	height:7px;
+}
+
+.peep .dijitSplitContainerSizerV .thumb {
+	background:url("../images/splitContainerSizerH-thumb.png") no-repeat #ccc;
+	top:1px;
+	width:19px;
+	height:3px;
+	overflow: hidden;
+}
+
+.peep .dijitSplitter {
+	border-color: #a1a1a1;
+}

@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Cookie Banner module.
+ *
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function cookie_banner_uninstall() {
+  db_delete('variable')->condition('name', db_like('cookie_banner_') . '%', 'LIKE')->execute();
+}

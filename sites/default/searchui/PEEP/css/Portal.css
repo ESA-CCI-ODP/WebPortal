@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+#portal       {height: 100%; width: 100%; }
+.portalHead   {height: 120px; color: white; background-color: #fffff0; background-image: url('/PEEP/page_images/Banner.png')}
+.portalLeft   {width: 200px;  border-right: 1px solid #D0D0D0; background-color: #fff0f0; padding-left: 25px;}
+.portalRight  {width: 200px;  border-left:  1px solid #D0D0D0; background-color: #f0f0ff; padding-left: 25px;}
+.portalMain   { overflow-y: scroll; padding-top: 30px; }
+#peep         {position: relative; height:90%; width:90%; margin: 0 auto; }
+.portalFoot   {height: 50px;  background-color: #f0fff0; }
+.enormous     {font-size: 2.5em; }

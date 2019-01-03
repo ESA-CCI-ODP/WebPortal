@@ -1,0 +1,89 @@
+/*
+This is the specific style sheet for the guest/welcome page There are NO CLASSES or TAGS here
+Everything in this sheet refers only to individual dom element styles.
+*/
+@CHARSET "UTF-8";
+
+#frontPageContainer {
+	      height: auto; 
+	      background: #f0f0f0 url('/images/SYS/ESA_talos_guestcontent_graph_web.png') no-repeat right bottom;
+	      margin: 4px 0px 0px 4px;
+        padding: 5px;
+        zIndex: 90;
+}
+
+#frontPagePOTM { width: 280px; padding: 5px; float: left;
+                 margin: 10px 10px 20px 10px;
+                 background-color: #e0e0e0;
+               }
+
+#fpPOTM { width: 270px; }
+
+#fpESAlogo { float: left; }
+#fpESAlogoImg { width: 250px;}
+               
+#fpText {position: relative; top: 0px; clear: left; padding: 10px 0px 20px 8px; z-index: 10000; }   
+                                      
+#rightpad1 {float: right; height: 80px; width: 540px;}
+#rightpad2 {clear: right; float: right; height: 20px; width: 340px;}
+#rightpad3 {clear: right; float: right; height: 70px; width: 320px;}
+#rightpad4 {clear: right; float: right; height: 20px; width: 300px;}
+#rightpad5 {clear: right; float: right; height: 20px; width: 280px;}
+#rightpad6 {clear: right; float: right; height: 20px; width: 260px;}
+#rightpad7 {clear: right; float: right; height: 20px; width: 240px;}
+#rightpad8 {clear: right; float: right; height: 20px; width: 200px;}
+
+#fpRight_Top    { position: absolute; right: 2px; top: 4px; }
+
+#news {
+        position: absolute; 
+        top: 0px;
+        left: 4px;
+        right: 50%;
+        margin: 4px 2px 0px 0px;
+        zIndex: 90;
+}
+
+#seminars {
+        position: absolute; 
+        top: 0px;
+        left: 50%;
+        right: 0px;
+        margin: 4px 0px 0px 2px;
+        zIndex: 90;
+}
+#publications { 
+        position: absolute;
+        top: 302px;
+        left: 4px;
+        right: 50%;
+        margin: 4px 2px 0px 0px;
+        zIndex: 90
+}
+  
+#conf {
+        position: absolute;
+        top: 302px;
+        left: 50%;
+        right: 0px;
+        margin: 4px 0px 0px 2px;
+        zIndex: 90
+}
+  
+#orbits {
+        position: absolute;
+        top: 604px;
+        left: 4px;
+        right: 50%;
+        margin: 4px 2px 0px 0px;
+        zIndex: 90
+}
+
+#goocal {
+        position: absolute;
+        top: 604px;
+        left: 50%;
+        right: 0px;
+        margin: 4px 0px 0px 2px;
+        zIndex: 90
+}

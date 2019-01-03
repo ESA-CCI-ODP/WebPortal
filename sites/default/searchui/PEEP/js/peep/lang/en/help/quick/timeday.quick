@@ -1,0 +1,5 @@
+<!--MD-->
+###Status Display - Date/Time
+
+Displays the date/time associated with the observation data set currently being displayed as the active data layer. 
+If the active data set does not contain any time axis data, this element will display today's date.

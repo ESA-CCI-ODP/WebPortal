@@ -1,0 +1,7 @@
+<!--MD-->
+###Base Layer Selector
+
+The Openlayers tool for selecting the map base layer. 
+Also useful for switching projections if the layer set contains alternatives such as polar projections.
+
+Clicking on the tab causes a pop-out selector to appear.

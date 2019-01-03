@@ -1,0 +1,29 @@
+.calendarBar  { position: absolute; width: 100%; height: 80%;
+}
+
+.calendarBarHidden{
+	visibility: hidden;
+}
+
+.calendarBarHeadline  { position: inline; margin-top: 1em; width: 100%; 
+                        text-align: center; font-weight: bold; font-size: .9em; 
+}
+
+.timePickerVisible  { position: inline; margin-left: auto; margin-right: auto; ; margin-top: 1em;
+                      width: 10em; visibility: visible; text-align: center; }
+.timePickerHidden   { visibility: hidden;}
+.tSelect            { width: 8em;  text-align: center; }
+.fSelect            { width: 100%; text-align: center; }
+
+.timeFrame          { top: 3em; text-align: center; margin: 0px auto; width: 90%;}
+
+.timeFramePrompt    { top: 3em; color: #900000; background-color: #e0e0e0;
+                      padding: 4px; margin: 5px 0px; width: 100%; cursor: pointer; }
+
+.tHidden    { display: none;  }
+.tVisible   { display: inline;}
+
+.selTime    { color: black; }
+
+.toggler    { position: relative; top: -2em ; z-index: 5000; }
+

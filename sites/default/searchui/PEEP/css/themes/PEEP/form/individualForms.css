@@ -1,0 +1,13 @@
+/********************************************************************
+ * Form-Specific styles for applying to TALOS forms. These can be set
+ * up to act in several different ways. Look into the documentation
+ * for an explanation. In most cases a user will do all  this using
+ * the template editor so the actual implementation will be automatic
+ *******************************************************************/
+
+/** The Pop-up Menu Editor and Menu Crator forms in Menu Maintenance **/
+
+/** set a default width for the text and combo box elements
+#menuEditor .dijitTextBox, .dijitComboBox { width: 30em; }
+#menuCreator .dijitTextBox, .dijitComboBox { width: 30em; }
+**/

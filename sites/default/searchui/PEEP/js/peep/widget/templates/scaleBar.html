@@ -1,0 +1,62 @@
+<div class='${baseClass}'>
+	<!-- This is the z-Axis value selector -->
+  <div class='zPickerHidden' data-dojo-attach-point='zPicker'>
+    <span class='zLabel'  data-dojo-attach-point='zLabel'   ></span> (
+    <span class='zUnits'  data-dojo-attach-point='zUnits'   ></span>)<br />
+    <select class='zSelect' 
+		        data-dojo-attach-point='zSelector'
+						data-dojo-attach-event='onchange: _zValueChanged'>
+		</select>
+   </div>
+	<div class='${baseClass}Headline'>
+		<span data-dojo-attach-point='headline'></span>
+	</div>
+	<div class='${baseClass}Wrapper'>
+	  <img  class='${baseClass}Image' src='' 
+	        data-dojo-attach-point='colorBar' 
+	        data-dojo-attach-event='onclick: _doPalettePicker' 
+					title='${_messages.paletteHoverMessage}' />
+		<!-- These are the scale divisions, max, min, etc indicators -->
+		<div class='${baseClass}Controls'>
+			<div class='scaleValues scaleMax' 
+			     title='${_messages.maxValueHoverMessage}' >
+              <input type='text'class='scaleMax' 
+							       data-dojo-attach-point='scaleMax'
+										 data-dojo-attach-event='onchange: _doMaxSelect' />
+			</div>
+	    <div class='scaleValues scaleMin' 
+			     title='${_messages.minValueHoverMessage}' >
+              <input type='text'class='scaleMin' 
+                     data-dojo-attach-point='scaleMin' 
+										 data-dojo-attach-event='onchange: _doMinSelect' />
+		  </div>
+	    <div class='scaleValues scaleOneThird' ><span data-dojo-attach-point='scaleOneThird' ></span></div>
+	    <div class='scaleValues scaleTwoThirds'><span data-dojo-attach-point='scaleTwoThirds'></span></div>
+    </div>
+  </div>
+    <!-- These are the action buttons -->
+  <div class='scaleToggleWrapper'>
+  	<div class='scaleToggle autoScaleToggle'
+		     title='${_messages.autoScaleHoverMessage}'
+		     data-dojo-attach-event='onclick: _toggleAutoScale'>
+		  <span data-dojo-attach-point='autoScaleText'>${_messages.autoScaleText}</span>
+			<img  class='scaleToggleImage' data-dojo-attach-point='autoScaleState' src='' />
+		</div>
+    <div class='scaleToggle logScaleToggle' 
+         title='${_messages.logScaleHoverMessage}'
+         data-dojo-attach-event='onclick: _toggleLogScale'>
+      <span data-dojo-attach-point='logScaleText'>${_messages.logScaleText}</span>
+      <img  class='scaleToggleImage' data-dojo-attach-point='logScaleState' src='' />
+		</div>
+    <div class='scaleToggle revertButton' 
+         title='${_messages.revertButtonHoverMessage}'
+         data-dojo-attach-event='onclick: _revertClick'>
+      <span data-dojo-attach-point='revertText'>${_messages.revertText}</span>
+    </div>
+    <div class='scaleToggle snapshotButton' 
+         title='${_messages.snapshotButtonHoverMessage}'
+         data-dojo-attach-event='onclick: _takeSnapshot'>
+      <span data-dojo-attach-point='revertText'>${_messages.snapshotText}</span>
+    </div>
+	</div>
+</div>

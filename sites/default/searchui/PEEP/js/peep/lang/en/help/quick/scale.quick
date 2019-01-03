@@ -1,0 +1,13 @@
+<!--MD-->
+###The Scale Bar
+
+The scale bar is the key to the layer colouring. Scale point are shown at the
+min/max/one third/two thirds value positions. The scale can be adjusted by using
+the automatic and logarithmic scaling options. The max and min values can also be
+set manually by clicking on the value displayed and entering a new one.
+
+The colour palette can also be changed (if the data set provides alternatives). 
+Click on the current colour bar and a pop up window will present the available 
+selection. Click on your choice to switch to the new palette)
+
+***Also see the control buttons just below the scale bar area***

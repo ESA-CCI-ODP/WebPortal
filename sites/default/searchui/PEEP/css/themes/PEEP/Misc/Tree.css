@@ -1,0 +1,249 @@
+
+/* Tree */
+
+.peep .dijitTreeNode {
+    background-image : url('../images/i.gif');
+    background-position : top left;
+    background-repeat : repeat-y;
+    margin-left: 0px;
+    zoom: 1;  /* MOW: what the heck is this doing in here? */
+}
+
+/* left vertical line (grid) for all nodes */
+.peep .dijitTreeIsLast {
+    background: url('../images/i_half.gif') no-repeat;
+}
+
+.peep .dijitTreeIsRoot {
+    margin-left: 0;
+    background-image: none;
+}
+
+.peep .dijitTreeExpando {
+ /*
+    width: 18px;
+    height: 18px;
+*/
+}
+
+.peep .dijitTreeContent {
+    min-height: 18px;
+    min-width: 18px;
+    margin-left:0px;
+    padding-top:3px;
+    padding-left:1px;
+}
+
+
+.peep .dijitTreeExpand {
+    width: 18px;
+    height: 18px;
+    background-repeat : no-repeat;
+}
+
+/* same style as IE selection */
+.peep .dijitTreeNodeEmphasized {
+    background-color: Highlight;
+    color: HighlightText;
+}
+
+/* don't use :focus due to opera and IE's lack of support on div's */
+.peep .dijitTreeLabelFocused {
+/*  outline: 1px invert dotted; */
+  background:#dde7f2;
+}
+
+.peep .dijitTreeExpandoOpened {
+/*  background-image: url('../images/treeExpand_minus.gif'); */
+}
+
+.peep .dijitTreeExpandoClosed {
+/*  background-image: url('../images/treeExpand_plus.gif'); */
+}
+
+.peep .dijitTreeExpandoLeaf {
+/*  background-image: url('../images/treeExpand_leaf.gif'); */
+}
+
+.peep .dijitTreeExpandoLoading {
+/*  background-image: url('../images/treeExpand_loading.gif'); */
+}
+
+.peep .dijitTreeIcon {
+  width: 16px;
+  height: 16px;
+  padding-right: 4px;
+}
+
+.peep .dijitFolderOpened {
+  background: url('../images/folderOpened.gif') no-repeat;
+}
+
+.peep .dijitFolderClosed {
+  background: url('../images/folderClosed.gif') no-repeat;
+}
+
+.peep .dijitLeaf {
+  background: url('../images/leaf.gif') no-repeat;
+}
+
+.peep .dijitLeafActive {
+  font-weight: bold; color: #900000;
+}
+
+.peep .dijitHotItem {
+	
+}
+
+.peep .dijitLeafVisibleLayer {
+  font-weight: bold; color: #ffffff; background-color: #900000;
+}
+
+.peep .dijitTreeNodeHover {
+/*
+  color: #d0103a;
+  background-color: none !important;
+*/
+}
+
+/* Drag and Drop on TreeNodes
+ * Put insert line on dijitTreeContent node so it's aligned w/
+ * (ie, indented equally with) target element, even
+ * though dijitTreeRowNode is the actual "drag object"
+ */
+.peep .dijitTreeNode .dojoDndItemBefore,
+.peep .dijitTreeNode .dojoDndItemAfter {
+  border-bottom: none;
+  border-top: none;
+}
+
+.peep .dijitTreeNode .dojoDndItemBefore .dijitTreeContent {
+  /* copied from Common.css */
+  border-top: 2px solid #369;
+}
+
+.peep .dijitTreeNode .dojoDndItemAfter .dijitTreeContent {
+  /* copied from Common.css */
+  border-bottom: 2px solid #369;
+}
+
+
+/*****************************************************************************/
+/* MenuTree */
+
+.peep .dijitMenuTreeContainer {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.peep .dijitMenuTreeNode {
+  font-weight: normal;
+  color: #626262;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+    cursor:pointer;
+}
+
+.peep .dijitMenuTreeIsRoot {
+    font-weight: bold; ; color: #822433;
+    background-color: #e0e0e0;
+    border-color: #f0f0f0;
+    border-bottom: 0px;
+    cursor:pointer;
+}
+
+.peep .dijitMenuTreeIsBranch {
+    font-weight: bold; color: #822433;
+    background-color: #e0e0e0;
+    border-color: #f0f0f0;
+    cursor:pointer;
+}
+
+.peep .dijitMenuTreeIsLast {
+    border-bottom: 0px;
+}
+
+.peep .dijitMenuTreeLabel {
+  font-size: 9pt;
+  margin-left: 5px;
+}
+
+.peep .dijitMenuTreeExpando {
+/*    width: 10px; */
+}
+
+.peep .dijitMenuTreeContent {
+    min-height: 18px;
+    min-width: 18px;
+    padding-left: 5px;
+}
+
+.peep .dijitMenuTreeContentExpanded {
+  font-weight: bold; color: #822433;
+  
+}
+
+.peep .dijitMenuTreeExpand {
+}
+
+/* same style as IE selection */
+.peep .dijitMenuTreeNodeEmphasized {
+}
+
+/* don't use :focus due to opera and IE's lack of support on div's */
+.peep .dijitMenuTreeLabelFocused {
+/*  outline: 1px dotted black; */
+}
+
+.peep .dijitMenuTreeExpandoOpened {
+/*  background: url('../images/spriteTree.gif') no-repeat -18px top; */
+}
+
+.peep .dijitMenuTreeExpandoClosed {
+/*  background-image: url('../images/spriteTree.gif'); */
+}
+
+.peep .dijitMenuTreeExpandoLeaf {
+/*  background: url('../images/spriteTree.gif') no-repeat -36px top; */
+}
+
+.peep .dijitMenuTreeExpandoLoading {
+/*  background-image: url('../images/treeExpand_loading.gif'); */
+}
+
+.peep .dijitMenuTreeIcon {
+  width: 1em;
+  height: 1em;
+  vertical-align: text-top;
+}
+
+/* the menu tree icons */
+.peep .dijitMenuFolderOpened {
+  width: 0px; padding: 0px;
+/*  background: url('../images/menuFolderOpened.gif') no-repeat; */
+}
+
+.peep .dijitMenuFolderClosed {
+  width: 0px; padding: 0px;
+/*  background: url('../images/menuFolderClosed.gif') no-repeat; */
+}
+
+.peep .dijitMenuLeaf {
+	width: 0px; padding: 0px;
+/* background: url('../images/menuLeaf.gif') no-repeat; */
+}
+
+/*  the directory tree icons */
+.peep .dijitDirTreeFolderOpened {
+  background: url('../images/folderOpened.gif') no-repeat;
+}
+
+.peep .dijitDirTreeFolderClosed {
+  background: url('../images/branchClosed.gif') no-repeat;
+}
+
+.peep .dijitDirTreeLeaf {
+  background: url('../images/folderClosed.gif') no-repeat;
+}
+

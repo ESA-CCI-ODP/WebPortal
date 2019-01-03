@@ -1,0 +1,31 @@
+<div class='${baseClass}' role='dialog' >
+  <div data-dojo-attach-point='titleBar' class='dijitDialogTitleBar'>
+    <span data-dojo-attach-point='titleNode' class='${baseClass}Title'
+        role='heading' level='1'>${_messages.paletteSelectionTitle}</span>
+    <span data-dojo-attach-point='closeButtonNode' class='dijitDialogCloseIcon' 
+          data-dojo-attach-event='ondijitclick: onCancel' 
+          title='${_messages.closeButton}' role='button' tabIndex='-1'>
+    </span>
+  </div>
+  <div class='${baseClass}PaneContent'>
+  	<div data-dojo-attach-point='bandSelector' class='${baseClass}BandSelector'>
+  		<span data-dojo-attach-point='selectLabel' 
+			      class='${baseClass}SelectLabel'
+			      title='${_messages.bandSelectToolTip}'>${_messages.bandSelectLabel}</span>
+	  	<select data-dojo-attach-point='Bands' 
+			        data-dojo-attach-event='onchange: _changeBands' 
+							class='${baseClass}BandSelect'
+							value = '10'>
+	      <option value='10'>10</option>
+	      <option value='20'>20</option>
+	      <option value='50'>50</option>
+	      <option value='100'>100</option>
+	      <option value='254'>254</option>
+			</select>
+		</div>
+    <div data-dojo-attach-point='paletteBarNode'
+				 class='${baseClass}BarSelect' >	
+    </div>
+		<div data-dojo-attach-point='containerNode'></div>
+  </div>
+</div>

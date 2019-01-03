@@ -1,0 +1,18 @@
+#error_wrapper {
+  position: absolute; top: 100px; left: 250px; width: 600px;
+  background-color: #f0f0f0;
+  padding-left: 20px; padding-right: 20px; padding-bottom: 20px;
+  border-left: 1px solid black; border-right: 3px solid #a0a0a0; border-top: 1px solid black; border-bottom: 3px solid #a0a0a0;
+  visibility: visible;
+}
+
+#error {
+  color: black;
+}
+
+#extended_error {
+  background-color: #e0e0e0; color: #a00000;
+  border-left: 1px solid #a00000; border-right: 3px solid #a08080; border-top: 1px solid #a00000; border-bottom: 3px solid #a08080;
+  padding-left: 20px; padding-right: 20px; padding-bottom: 20px;
+}
+

@@ -1,0 +1,6 @@
+<!--MD-->
+###Status Display - Layer ID and Name
+
+Displays the ID and the name associated with the currently visible data set. Followed by the projection used by the data.
+If required, an explanation of EPSG Projection codes can be seen, and specific codes can be looked up on the 
+<a href='http://www.epsg-registry.org/' target='_blank'>EPSG Registry Web Site</a>

@@ -1,0 +1,8 @@
+<!--MD-->
+###The Zoom Control
+
+- Clicking the +/- segments of the control cause the map to zoom in (+) and out (-)
+- Clicking the globe between the two other controls causes the map to zoom to full (world) extent
+
+If you click the globe accidentally, use the history control to go back to your previous zoom level
+rather than repeatedly clicking the + control. This will save both your time, and your bandwidth.

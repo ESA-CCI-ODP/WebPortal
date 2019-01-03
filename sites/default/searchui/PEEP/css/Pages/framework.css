@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+/* 
+ * This is the overall look and feel template for position and content of all
+ * the "system" sections. It mainly describes the menus, side-bars, footer, 
+ * 'big boxes', toasters, etc that are used system-wide.
+ */
+
+#contents   {
+  position: absloute; width: 100%; height: 100%; top: 0px; bottom: 0px;
+  margin-left: auto; margin-right: auto; background-color: white;
+}
+              
+#permaHead { 
+  width: 100%; height: 1.7em; color: black; /*#2060a0;*/
+  background: #fafafa url("../themes/PEEP/images/topBarBgLight.png") repeat-x left bottom;
+  border-bottom: 1px solid #a0a0a0;
+  display: table;
+}
+
+#statusLayer {
+  padding-left: 10px; height: 100%;
+  display: table-cell; 
+  vertical-align: middle;
+  text-align: center;
+}
+
+#permaFoot { 
+  width: 100%; height: 1.7em; color: black; /*#2060a0;*/
+  background: #fafafa url("../themes/PEEP/images/topBarBgLight.png") repeat-x left bottom;
+  border-top: 1px solid #a0a0a0;
+  display: table;
+}
+
+#statusTime  {
+  padding-left: 10px; height: 100%; text-align: left;
+  display: table-cell;
+  text-align: left; vertical-align: middle;
+}
+
+#statusLatLon {
+	padding-right: 10px; height: 100%; text-align: right; width: 300px;
+	display: table-cell;
+	text-align: right; vertical-align: middle;
+}
+
+#mainSplit {}
+
+#leftSideMenuBar {}
+
+#mainMenuBar {}
+
+#mainContents { }
+
+#innerPane    { overflow: hidden; }
+
+#statusBar {}
+
+#peepGeneralPopup {}
+
+#peepGeneralPopupContents { overflow: auto; }
+
+#throbber {
+	visibility: visible; position: absolute;
+	left: 50%; right: 50%; top:50%; bottom: 50%; 
+	width: 30px; height: 30px; z-index: 10000;
+}
+
+#mapOverlay {visibility: hidden; positon: absolute; top: 0px; left: 0px; }
+
+#mapContainer {overflow: hidden; }
+/************************************************************************************** 
+ * That's the main boxes defined 
+ ************************************************************************************** 
+ * So now we can define the classes used in the main layout framework
+ **************************************************************************************
+ */
+
+.leftSideBar  { width: 200px; }
+.rightSideBar { width: 185px; }
+ 
+.permaFoot {}
+

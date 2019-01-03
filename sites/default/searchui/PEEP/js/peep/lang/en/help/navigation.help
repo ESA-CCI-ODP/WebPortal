@@ -1,0 +1,55 @@
+<!--MD-->
+###Navigating around the System
+
+***Using the Interface Controls***
+
+<img src='images/HELP/helpKey.png' />
+
+**The 'Expando' Panels**
+
+The zones to the left and right of the map are expandable/collapsible panels. When the initial display opens, the Scale Bar panel
+on the right-side of the display is not open. It will open automatically when a layer is loaded. The Layer and Display Options panel
+is open by default and set to display the Layers list.
+
+<img src='images/HELP/collapse.png' style = 'float: left; padding right: 5px; padding-bottom: 5px; ' />
+Both these layers can be collapsed in order to enlarge the viewable area. In the top bar of each panel is a small icon which can be 
+clicked to collapse/expand the panel. When collapsed a panel occupies a small part of the edge of the display. 
+
+When expanded, these panels are separated from the main map by a narrow bar. Hovering over this bar will cause the cursor to
+change into a horizontal drag cursor. These bars can be dragged in and out to change the size of the panels. This flexibility is
+particularly useful where data set names are too long to fit into the default width of the Layer Select panel.
+
+**The 'Accordion' Panes**
+
+<img src='images/HELP/accordion.png' style='float: left; padding-right: 10px; padding-bottom: 5px;' />
+The left Expandable panel contains two separate elements, which can only be displayed one at a time. The non-displayed
+element is represented by a narrow bar containing the title of the element.
+
+Clicking on the collapsed title bar (in this case the Date/Time/Animate Options bar) will cause the bar to expand and 
+*'push the other one out of the way'*. 
+
+Display order is maintained, so the "Layer Select pane will be pushed down to the bottom of the panel by the 
+"Time/Date/Animate Options pane" and on re-opening it will push the "Time/Date/Animate Options" pane back up to the top.
+
+**The Error 'Toaster'**
+
+<img src='images/HELP/Toaster.png' style = 'padding-right: 10px; padding-bottom: 5px; float: left;' />
+Called a toaster because it 'pops up' a message. This will open if there is a problem within the application, or if 
+you have tried to do something which is not permitted (e.g. attempting to set a log scale on a view which contains negative
+values).
+
+Some types of message will slide away after a preset time (normally around 10 seconds) but important messages stay visible until 
+you dismiss them.
+
+Toaster messages can be dismissed by clicking anywhere inside the toaster pane.
+
+There is a software provision for another toaster at the top-right corner of the display to be used for system messages. 
+However this is not currently active.
+
+**Pop-Up Dialogs**
+
+In response to several types of action or request, a dialog might pop up. If a dialog is active, the rest of the display is faded 
+and it is not possible to activate or use any controls except those presented by the dialog. This help pane is a pop-up dialog.
+
+<img src='images/HELP/dialogClose.png' style = 'float: left; padding right: 5px; padding-bottom: 5px; ' />
+Dialogs can be closed by clicking on the collapse icon on the right side of the dialog title bar. 

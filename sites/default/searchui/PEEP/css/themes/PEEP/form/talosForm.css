@@ -1,0 +1,562 @@
+/******************
+ * Talos Form CSS *
+ ******************/
+
+/** First go and load in all the individual form special styles **/
+@import url("individualForms.css" );
+
+/*
+ * Manipulate the table/tr/td aligment tags
+ */
+
+.formClass table{
+}
+ 
+.formClass tr {
+}
+
+.formClass td {
+	padding: 3px;
+}
+
+/********************
+ * Default Form Theme
+ ********************/
+
+.formClass {
+  text-align: left;
+  font-size: 1em;
+  color: #626262;
+  margin: 5px;
+  padding: 5px;
+  }
+
+.formClass li {
+  list-style: none;
+  }
+
+.tabContainerClass {
+  text-align: left;
+  }
+
+.accordionContainerClass {
+  text-align: left;
+  }
+
+.subFormClass {
+  text-align: left;
+  padding: 3px;
+  }
+
+.displayGroupClass {
+  border: 0px;
+  }
+
+#fieldset-buttonDisplayGroup {
+  border: 0px;
+  }
+
+
+/***************************
+ * Buttons Theme
+ ***************************/
+
+.ButtonsThemeRounded button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  radius: 4px 4px 4px 4px;
+  }
+
+.ButtonsThemeRounded .dijitButtonNode {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  radius: 6px 6px 6px 6px;
+  }
+
+.ButtonsThemeRoundedFixedWidth button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  radius: 4px 4px 4px 4px;
+  width: 150%;
+  }
+
+.ButtonsThemeRoundedFixedWidth .dijitButtonNode {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  radius: 6px 6px 6px 6px;
+  width: 150%;
+  }
+
+.ButtonsThemeSquareFixedWidth button {
+  width: 150%;
+  }
+
+.ButtonsThemeSquareFixedWidth .dijitButtonNode {
+  width: 150%;
+  }
+
+
+/************************************************
+ * There are 6 permissable Button Layouts:
+ *
+ * BottomLeftHorizontal   - float left, horizontally
+ * BottomLeftVertical     - float left, stacked vertically
+ * BottomCenterHorizontal - centered, horizontally
+ * BottomRightHorizontal  - float right, horizontally
+ * BottomRightVertical    - float right, stacked vertically
+ * None                   - allows the user to include the buttons in their own Display Groups
+ *
+ ************************************************/
+
+/**************************
+ *  Bottom Left Horizontal
+ **************************/
+.ButtonsLayoutBottomLeftHorizontal {                /* Wrapper */
+  float: left;                                      /* Float this wrapper left */
+  border: 0px;
+  }
+
+.ButtonsLayoutBottomLeftHorizontal .buttonElementClass {   /* Button */
+  float: left;                                             /* Float each button left to maintain order */
+  }
+
+/**************************
+ * Bottom Left Vertical
+ **************************/
+.ButtonsLayoutBottomLeftVertical {                         /* Wrapper */
+  clear: left;                                             /* Float this wrapper left */
+  text-align: left;                                        /* Left align content */
+  border: 0px;
+  }
+
+.ButtonsLayoutBottomLeftVertical .buttonElementClass {     /* Button */
+  clear: left;                                             /* Float each button left to maintain order */
+  width: 100%;                                             /* Force the vertical stacking */
+  }
+
+/**************************
+ * Bottom Center Horizontal
+ **************************/
+.ButtonsLayoutBottomCenterHorizontal {                     /* Wrapper */
+/*  text-align: center;                                      /* Center align content */
+  border: 0px;
+  clear: both;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ButtonsLayoutBottomCenterHorizontal .buttonElementClass {   /* Button */
+/*  float: center;*/
+  float:left;
+  position:relative;
+  }
+
+/**************************
+ * Bottom Right Horizontal
+ **************************/
+.ButtonsLayoutBottomRightHorizontal {                        /* Wrapper */
+  float: right;                                             /* Float this wrapper right */
+  text-align: right;                                        /* Right align content */
+  border: 0px;
+  }
+
+.ButtonsLayoutBottomRightHorizontal .buttonElementClass {   /* Button */
+  float: left;                                              /* Float each button left to maintain order */
+  }
+
+/**************************
+ * Bottom Right Vertical
+ **************************/
+.ButtonsLayoutBottomRightVertical {                         /* Wrapper */
+  clear: right;                                             /* Float this wrapper right */
+  text-align: right;                                        /* Right align content */
+  border: 0px;
+  }
+
+.ButtonsLayoutBottomRightVertical .buttonElementClass {     /* Button */
+  clear: left;                                              /* Float each button left to maintain order */
+/*  width: 100%;    */                                           /* Force the vertical stacking */
+  }
+
+.buttonElementClass {
+  padding-right: 12px;
+  float: right;
+  }
+
+.elementWrapperClass {
+/*  display: inline; */
+	margin: 5px 3px 1px 3px;
+  }
+
+.elementLabelClass {
+/*  vertical-align: top; */
+  text-align: right;
+  margin-right: 2px;
+  }
+
+.elementMainClass {
+/*  position: absolute; */
+/*  left: 25em; */
+  text-align: left;
+  }
+
+.elementHintClass {
+  font-weight: bold;
+  display: none;
+  }
+
+.elementErrorClass {
+  font-weight: bold;
+  display: none;
+  }
+
+.elementMultipleClass {
+  }
+
+.elementMultipleClass img {
+  vertical-align: middle;
+  }
+
+.dijitTooltipContainer {
+  font-size: 9pt;
+  }
+
+/*****************************
+ * DisplayGroups Theme
+ *****************************/
+
+.displayGroupClass legend {
+  margin-left: 3px;
+  }
+
+.DisplayGroupsThemeRounded fieldset {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  radius: 8px 8px 8px 8px;
+  padding: 0px;
+  }
+
+.DisplayGroupsThemeRoundedFixedWidth fieldset {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  radius: 8px 8px 8px 8px;
+  width: 90%;
+  padding: 0px;
+}
+
+.DisplayGroupsThemeSquareFixedWidth fieldset {
+  width: 90%;
+  padding: 0px;
+}
+
+/*************************
+ * White Silver Form Theme
+ *************************/
+
+.WhiteSilver {
+  color: #000000;
+  border-color: #a0a0a0;
+  }
+
+.WhiteSilver .formClass { }
+
+.WhiteSilver .tabContainerClass { }
+
+.WhiteSilver .accordionContainerClass { }
+
+.WhiteSilver .subFormClass { }
+
+.WhiteSilver .displayGroupClass {
+  margin: 5px 5px 5px 0px;
+  }
+
+.WhiteSilver fieldset {
+  color: #000000;
+  border: 1px solid #a0a0a0;
+  padding: 2px;
+}
+
+.WhiteSilver legend {
+  color: #000000;
+  }
+
+.WhiteSilver .buttonElementClass {
+  float: left;
+  border-size: 3px;
+  color: #000000;
+  }
+
+.WhiteSilver .dijitButton .dijitButtonText {
+  }
+
+.WhiteSilver .dijitButtonHover .dijitButtonText {
+  }
+
+.WhiteSilver .dijitButtonContents {
+  }
+
+.WhiteSilver .elementWrapperClass { }
+
+.WhiteSilver .elementLabelClass { }
+
+.WhiteSilver .elementMainClass { }
+
+.WhiteSilver .elementHintClass { }
+
+.WhiteSilver .elementErrorClass { }
+
+.WhiteSilver .dijitTooltipContainer {
+  font-size: 9pt;
+  }
+
+
+/************************
+ * Blue Silver Form Theme
+ ************************/
+
+.BlueSilver {
+  color: #0000a0;
+  border-color: #687bab;
+  background-color: #e0e0ff;
+  }
+
+.BlueSilver .formClass { }
+
+.BlueSilver .tabContainerClass { }
+
+.BlueSilver .accordionContainerClass { }
+
+.BlueSilver .subFormClass { }
+
+.BlueSilver .displayGroupClass {
+  margin: 5px 5px 5px 0px;
+  }
+
+.BlueSilver fieldset {
+  color: #0000a0;
+  border: 1px solid #687bab;
+  padding: 2px;
+}
+
+.BlueSilver legend {
+  color: #0000a0;
+  }
+
+.BlueSilver .buttonElementClass {
+  float: left;
+  border-size: 3px;
+  color: #0000a0;
+  }
+
+.BlueSilver .dijitButton .dijitButtonText {
+  color: #0000a0;
+  background-color: #e0e0ff;
+  }
+
+.BlueSilver .dijitButtonHover .dijitButtonText {
+  color: #0000a0;
+  background-color: #c1c1ff;
+  }
+
+.BlueSilver .dijitButtonContents {
+  background-color: #e0e0ff;
+  }
+
+.BlueSilver .elementWrapperClass { }
+
+.BlueSilver .elementLabelClass { }
+
+.BlueSilver .elementMainClass { }
+
+.BlueSilver .elementHintClass { }
+
+.BlueSilver .elementErrorClass { }
+
+.BlueSilver .dijitTooltipContainer {
+  font-size: 9pt;
+  }
+
+
+/***********************
+ * Red Silver Form Theme
+ ***********************/
+
+.RedSilver {
+  color: #a00000;
+  border-color: #f7aab2;
+  background-color: #ffecec;
+  }
+
+.RedSilver .formClass { }
+
+.RedSilver .tabContainerClass { }
+
+.RedSilver .accordionContainerClass { }
+
+.RedSilver .subFormClass { }
+
+.RedSilver .displayGroupClass {
+  margin: 5px 5px 5px 0px;
+  }
+
+.RedSilver fieldset {
+  color: #a00000;
+  border: 1px solid #a00000;
+  padding: 2px;
+}
+
+.RedSilver legend {
+  color: #a00000;
+  }
+
+.RedSilver .buttonElementClass {
+  float: left;
+  border-size: 3px;
+  color: #a00000;
+  }
+
+.RedSilver .dijitButton .dijitButtonText {
+  color: #a00000;
+  background-color: #ffecec;
+  }
+
+.RedSilver .dijitButtonHover .dijitButtonText {
+  color: #a00000;
+  background-color: #ffa8b0;
+  }
+
+.RedSilver .dijitButtonContents {
+  background-color: #ffecec;
+  }
+
+.RedSilver .buttonElementClass {
+  float: left;
+  }
+
+.RedSilver .elementWrapperClass { }
+
+.RedSilver .elementLabelClass { }
+
+.RedSilver .elementMainClass { }
+
+.RedSilver .elementHintClass { }
+
+.RedSilver .elementErrorClass { }
+
+.RedSilver .dijitTooltipContainer {
+  font-size: 9pt;
+  }
+
+
+/************************
+ * Grey Silver Form Theme
+ ************************/
+
+.GreySilver {
+  color: #686868;
+  border-color: #686868;
+  background-color: #e6e6e6;
+  }
+
+.GreySilver .formClass { }
+
+.GreySilver .tabContainerClass { }
+
+.GreySilver .accordionContainerClass { }
+
+.GreySilver .subFormClass { }
+
+.GreySilver .displayGroupClass {
+  margin: 5px 5px 5px 0px;
+  }
+
+.GreySilver fieldset {
+  color: #686868;
+  border: 1px solid #686868;
+  padding: 2px;
+}
+
+.GreySilver legend {
+  color: #686868;
+  }
+
+.GreySilver .buttonElementClass {
+  float: left;
+  border-size: 3px;
+  color: 686868;
+  }
+
+.GreySilver .dijitButton .dijitButtonText {
+  color: #686868;
+  background-color: #e6e6e6;
+  }
+
+.GreySilver .dijitButtonHover .dijitButtonText {
+  color: #686868;
+  background-color: #e6e6e6;
+  }
+
+.GreySilver .dijitButtonContents {
+  background-color: #e6e6e6;
+  }
+
+.GreySilver .buttonElementClass {
+  float: left;
+  }
+
+.GreySilver .elementWrapperClass { }
+
+.GreySilver .elementLabelClass { }
+
+.GreySilver .elementMainClass { }
+
+.GreySilver .elementHintClass { }
+
+.GreySilver .elementErrorClass { }
+
+.GreySilver .dijitTooltipContainer {
+  font-size: 9pt;
+  }
+
+
+/********************
+ * Rounded Form Theme
+ ********************/
+
+.formRounded {
+	-webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  radius: 8px 8px 8px 8px;
+  }
+
+.formRounded fieldset {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  radius: 8px 8px 8px 8px;
+  padding: 2px;
+}
+
+.formRounded legend {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  radius: 4px 4px 4px 4px;
+  }
+
+.formRounded .formClass {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  radius: 8px 8px 8px 8px;
+  }
+
+.formRounded .subFormClass {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  radius: 8px 8px 8px 8px;
+  }
+
+.formRounded .buttonElementClass {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  radius: 8px 8px 8px 8px;
+  }

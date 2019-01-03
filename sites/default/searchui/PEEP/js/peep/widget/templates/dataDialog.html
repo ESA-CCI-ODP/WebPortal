@@ -1,0 +1,44 @@
+<div class='${baseClass}' role='dialog'>
+  <div data-dojo-attach-point='titleBar' class='dijitDialogTitleBar'>
+    <span data-dojo-attach-point='titleNode' class='${baseClass}Title' id='${id}_title'
+        role='heading' level='1'>Data Sub-System - Empty Page
+		</span>
+    <span data-dojo-attach-point='closeButtonNode' class='dijitDialogCloseIcon' 
+		      data-dojo-attach-event='ondijitclick: onCancel' 
+		      title='${closeButton}' role='button' tabIndex='-1'>
+    </span>
+  </div>
+  <div data-dojo-attach-point='contentNode' class='${baseClass}PaneContent'>
+    <div data-dojo-attach-point='containerNode'    class='dataContent'>
+    </div>
+    <div data-dojo-attach-point='minMaxLinkNode'   class='invisible'>
+    <div class='vProfileClick'>
+        <span class='ddLink' 
+              data-dojo-attach-point='setMinNode' 
+              data-dojo-attach-event='onclick: _setMin'> </span>
+				<br />
+        <span class='ddLink' 
+              data-dojo-attach-point='setMaxNode' 
+              data-dojo-attach-event='onclick: _setMax'> </span>
+      </div>
+    </div>
+		<br />
+    <div data-dojo-attach-point='vProfileLinkNode' class='invisible'>
+      <div class='profileClick'
+           data-dojo-attach-point='vProfileClickNode'
+           data-dojo-attach-event='click: _vProfilePupUp'
+           title='${_messages.verticalProfileToolTip}'>
+        ${_messages.verticalProfileToolTip}<br />
+        <span class='ddLink'>${_messages.verticalProfilePrompt}</span>
+      </div>
+    </div>
+    <div data-dojo-attach-point='tProfileLinkNode' class='invisible'>
+      <div class='profileClick'
+           data-dojo-attach-point='tProfileClickNode'
+           data-dojo-attach-event='click: _tProfilePupUp'
+           title='${_messages.timeProfileToolTip}'>
+				${_messages.timeProfileToolTip}<br />
+        <span class='ddLink'>${_messages.timeProfilePrompt}</span>
+     </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<HTML xmlns='http://www.w3.org/1999/xhtml'>
+<HEAD>
+
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+
+<!--  all peep styles are loaded by includes contained in main.css -->
+<link rel='stylesheet' type='text/css' href='css/main.css' />
+
+<!-- Later we need to look at alternative css styles for different media -
+     This is possibly best done in the meta-css loader files.
+     See the @import rule description at http://www.w3.org/TR/CSS2/cascade.html for more info
+<link rel='stylesheet' type='text/css' href='/css/printer.css' media='print' />
+-->
+
+<script type="text/javascript">
+ var dojoConfig = {
+                    dojoBlankHtmlUrl:     'blank.html'
+                  , parseOnLoad:          false
+                  , useXDomain:           true
+                  , preventBackButtonFix: false
+                  , baseUrl:              './'
+                  , paths:                {
+                                            peep: 'js/peep'
+                                          }
+                  , isDebug:              false
+                  , locale:               'en-gb'
+                  , require:              ['peep/userGuideInit']
+};
+</script>
+<!-- OK we're ready ... invoke the dojo loader for the rest of the control software -->
+
+<!-- North America -->
+<!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/dojo/1.9.1/dojo/dojo.js"></script> -->
+<!-- Europe -->
+<script type="text/javascript" src="http://yandex.st/dojo/1.9.1/dojo/dojo.js"></script>
+<!-- load up the Markdown parser used by the help sub-system -->
+<script type="text/javascript" src="js/markdown/showdown.js"></script>
+
+<title>PEEP Data Visualisation Tool - User Guide</title>
+</HEAD>
+<BODY >  
+<!-- create the help popup dialog -->
+<div  id='peepUserGuide' data-dojo-id='peepPrintableUserGuide' data-dojo-type='peep/widget/printableUserGuide'></div>
+</BODY>
+</HTML>

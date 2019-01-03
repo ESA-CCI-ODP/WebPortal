@@ -1,0 +1,27 @@
+<!--MD-->
+###Scale Control Area
+
+####Auto Scale
+
+Clicking this button toggles the scale range between :
+
+- **ON**  - Uses the highest and lowest values contained within the viewport as the max min scale values
+- **OFF** - Uses the current max and min scale values for all future operations until auto-scaling is switched on again.
+
+####Log Scale
+
+Clicking this button toggles the scale range between :
+
+- **ON**  - Uses a log scale if possible.
+- **OFF** - Uses a linear scale
+
+The system will ignore the request and generate a warning message if the data has negative values.
+
+####Restore Original Scale
+
+Regardless of the state of the Auto Scaling selection, if the Revert button is clicked, then auto-scaling will be switched off and
+the max and min values will revert to those supplied by the original layer data  (i.e. the highest and lowest values in the entire data set)
+
+####Snapshot Button
+
+Clicking this button will cause the visualiser to request a quick snapshot of the current view and display it in a pop-up window.

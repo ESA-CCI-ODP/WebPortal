@@ -1,0 +1,17 @@
+<!--MD-->
+###Calendar and Animation Options
+
+<img src='images/HELP/calBar1.png' style='float: left;' />
+
+Clicking the bar with the title **Date/Time/Animate Options** will cause the **Select Layers** pane to slide away and reveal
+the Date/Time/Animate Options Pane. Conversely, Once this is visible, clicking the bar with the title **Select Layers** will 
+cause the Select Layers pane to reappear.
+
+**NB - The Calendar options pane will be blank if the data set being viewed does not contain time axis data.**
+
+If the data set has a time axis, this section will allow you to select the date and/or time of the data you wish to view.
+In this pane you can also set up the start and end times for time sequence related actions such as animation and time sequence
+plots for a data point.
+
+For a fuller explanation of how to use this pane, please click on ***Using the Date/Time/Animate Options Pane*** item 
+in the main help menu.

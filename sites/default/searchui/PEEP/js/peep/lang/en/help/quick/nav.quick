@@ -1,0 +1,6 @@
+<!--MD-->
+###OpenLayers Navigation Control
+
+Clicking on the up/down/left/right arrows on this control will emulate 'eye movement' .. i.e.
+it will cause the map to pan down if you click the up arrow. Many users find the drag control
+a more intuitive method of panning around the map.

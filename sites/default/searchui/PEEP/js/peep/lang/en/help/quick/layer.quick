@@ -1,0 +1,16 @@
+<!--MD-->
+###The Layer Select Menu
+
+The actual layer selection menu is a multi-level tree. The top level being the list
+of data providers, and the layers beneath that either datasets or groups of datasets.
+
+Once a layer is selected, its entry will be hilighted. Multiple layers can be loaded
+and it is possible to switch between them by clicking the name of the layer you wish
+to view.
+
+Right-clicking an active layer name will pop up a context menu with the options:
+
+- Do Nothing/Ignore (in case you clicked in error)
+- Remove all active layers except this one
+- Remove this layer from the active set
+

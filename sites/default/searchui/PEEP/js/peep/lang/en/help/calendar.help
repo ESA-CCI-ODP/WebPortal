@@ -1,0 +1,47 @@
+<!--MD-->
+###Calendar and Animation Options
+
+<img src='images/HELP/calBar1.png' style='float: left; padding-right: 10px; ' />
+
+**NB - The Calendar options pane will be blank if the data set being viewed does not contain time axis data.**
+
+If the data set has a time axis, the initial display in this pane is just the date selection calendar, and the time step
+select box. This box may, or may not, be active depending upon whether there is more than one set of observations for the
+selected date. At this point the **Start Time** and **End Time** elements will have no values assigned.
+
+***At any stage, selecting a new date and/or time will cause the layer to be re-drawn with the selected data set.***
+
+- **Start Time** Clicking this button will cause the current Date/Time selection to be used as the starting time value for any time 
+sequence related activity. 
+- **End Time** Clicking this button will set the end time for the sequence. 
+
+A warning is generated if setting either time would result in a negative timeline (i.e. with an end time earlier than the start time)
+
+Once both start and end times are populated, the animation options become visible. 
+
+- **Animation Frame Selector** This item offers a selection of possible frame sets to be generated. It will offer the option to
+generate an animation based on monthly, weekly, daily and/or hourly frames, depending upon the actual data set being used. 
+
+- **Create Animation** Clicking this button will cause the client to request and display an animated image based on the criteria 
+displayed above (start/end dates/times and number of frames). 
+
+***It is worth noting that animations take a finite amount of time PER FRAME to generate and contain one complete image per frame.***
+ Animations based on large frame counts will take a (very) long time to build, and may be too large for your browser to handle.
+
+ ---
+ 
+ Once an animation has been created and is being displayed, the Animation Options change. The 'Create Animation' button is replaced
+ by:- 
+
+<img src='images/HELP/calBar2.png' style='float: left; padding-right: 10px; ' />
+- **Toggle Animation On/Off** keeps the animation within the context of the map, but switches the view of the current
+layer between the animated and static views.
+
+- **Remove the Animation** will completely remove the animation from the map. This option is not usually necessary since
+switching between layers will successfully remove the animation. However, it may be used to resolve memory issues caused by large 
+animations.
+
+It is possible to select a new date/time for the static display without losing the animation. ***HOWEVER*** switching to another 
+layer WILL destroy the animation.
+ 
+ 

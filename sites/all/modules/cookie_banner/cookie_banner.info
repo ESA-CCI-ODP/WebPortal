@@ -1,0 +1,5 @@
+name = Cookie_Banner
+description = "Displays a banner with cookie policy information."
+core = 6.x
+
+configure = admin/config/system/cookie-banner

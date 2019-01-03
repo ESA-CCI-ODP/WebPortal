@@ -1,0 +1,241 @@
+@CHARSET "UTF-8";
+
+html, body {  height: 100%; width: 100%;
+              font-family: Verdana, Helvetica, Arial, Geneva, sans-serif; font-size: 10pt; color: #000000;
+              margin: 0px;
+              padding: 0px; 
+              border: 0px;
+              background-color: #e6e6e6;
+              background-image: url('../images/SYS/background-img2.png');
+              background-repeat: repeat-x;
+              background-repeat-x: repeat;
+              background-repeat-y: norepeat;
+}
+
+body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+       -moz-box-sizing:    border-box;
+       -webkit-box-sizing: border-box;
+        box-sizing:        border-box;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/* DESIGN DATA STARTS HERE */
+
+div { }
+
+H1, H2, H3, H4, H5, h6 {
+	 color: #822433;
+	font-weight: bold;
+  text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+H1 {
+   font-size: 2em;
+	 padding-left: 10px;
+}
+
+H2 {
+	color: #484848;
+  font-size: 1.6em;
+}
+
+H3 {
+  font-size: 1.4em;
+}
+
+H4  {
+  color: #484848;
+	font-size: 1.2em;
+}
+
+H4, h5, h6 { 
+	display: inline;
+}
+
+H4 {
+  font-size: 1.2em;
+}
+
+H5 {
+  font-size: 1em;	
+}
+
+H6 {
+	color: #626262;
+	font-size: 1em;
+}
+
+.tinyFont, .tinyText { font-size: 0.8em }
+.biggerFont, .biggerText { font-size: 1.2em }
+.hugeFont, .hugeText { font-size: 1.6em }
+
+A, img, div, span {
+	 outline: 0;
+}
+
+A:link {
+  color: #d0103a;
+  text-decoration: none;
+}
+
+A:active {
+  color: #822433;
+  text-decoration: none;
+}
+
+A:visited {
+  color: #d0103a;
+  text-decoration: none;
+}
+
+A:hover {
+  color: #822433;
+  text-decoration: none;
+}
+
+fieldset { border: 1px solid #a1a1a1; }
+
+legend { color: #626262; }
+
+table { 
+	border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr { }
+	
+td {
+  background-color: #f0f0f0;
+  padding: 2px 5px 2px 5px;
+  margin: 0px;
+}
+
+th {
+	color: white;
+	background-color: #626262;
+  font-weight: bold;
+  padding: 2px 5px 2px 5px;
+  margin: 0px;
+}
+
+b, strong { font-weight: 600; }
+
+i, em { font-style: italic; }
+
+/* GENERAL CLASSES */
+
+.inline   { display: inline; }
+
+.cpointer { cursor: pointer; }
+.cdefault { cursor: default; }
+.cwait    { cursor: wait; }
+.cbusy    { cursor: progress; }
+.cmove    { cursor: move; }
+.chelp    { cursor: help; }
+
+.bglight  { background-color: #f0f0f0; }
+.bgmedium { background-color: #e0e0e0; }
+.bgdark   { background-color: #626262; }
+
+.darkred  { color: #822433; }
+.lightred { color: #d0103a; }
+.white    { color: white; }
+.black    { color: black; }
+.stdfont, darkgray, darkgrey { color: #626262; }
+.lightfont, mediumgray, mediumgrey { color: #a1a1a1; }
+
+.fontinvert { background-color: #626262; color: white; }
+
+/* certain universal formatting classes */
+.centerp   { text-align: center; }
+.margin10  { margin: 10px; }
+.margin5   { margin: 5px; }
+.fleft     { float: left;  margin-right: 1em; }
+.fright    { float: right; margin-left:  1em; }
+.hCenterDiv { position: relative; margin: 0 auto; }
+.vCenterDiv { position: relative; margin: auto 0; }
+.absCenterDiv {position: relative; margin: auto; }
+
+/* table colouring */
+/* If you want borders on your tables - set their class to tborder */
+td.tborder { border: 1px solid #a1a1a1; }
+th.tborder { border: solid #626262 }
+
+/* Alternating table colours */
+.tr0 { background-color: #f0f0f0; padding: 2px 5px 2px 5px; }
+.tr1 { background-color: #e0e0e0; padding: 2px 5px 2px 5px; }
+
+/*.tableBorder { border-left: 1px solid #a0a0a0; border-top: 1px solid #a0a082; border-right: 1px solid #909092; border-bottom: 1px solid #909092;}*/
+
+/*-- Countdown Timer/Orbit Counter stuff --*/
+
+.countdown {
+  text-align: right;
+}
+
+.lcdstyle{ /*Example CSS to create LCD countdown look*/
+  color:#160AFF;
+  padding: 3px;
+  font-size:120%;
+  font-weight: bold;
+}
+
+.lcdstyle_sup{ /*Example CSS to create LCD countdown look*/
+  color:black;
+  font-size:100%;
+  font-weight: normal;
+}
+
+/*-- Portal Stuff --*/
+.actionPanel { height: 180px; overflow: auto; }
+
+.stdTextPanel { overflow-y: auto; padding: 10px; text-align: justify;
+        margin-left: 5px; margin-right: 5px;
+        border: 1px solid #d0d0d0;
+/*        -moz-border-radius: 8px 8px 8px 8px;
+        -webkit-border-radius: 8px;
+        radius: 8px 8px 8px 8px;*/
+}
+
+hr.spacer { border:0px; background-color:#ededed; width:80%; height:1px; }
+
+.inlineButton { border: 0px; background-color: transparent; padding: 0px; font-size: 1em; }
+.inlineButton:hover { border: 0px; background-color: #a1a1a1; padding: 0px; font-size: 1em; }
+
+#galleryText {border: 1px solid #d0d0d0;
+              padding: 15px;
+              background-color: white;
+              /*-webkit-border-radius: 8px;
+              -moz-border-radius: 8px 8px 8px 8px;
+              radius: 8px 8px 8px 8px;*/
+      }
+          
+.portal_box { padding-bottom: 4px; }
+          
+/* pre-loader specific stuff to prevent unsightly flash of unstyled content */
+#loader {
+  padding:0;
+  margin:0;
+  position:absolute;../
+  top:0; left:0;
+  width:100%; height:100%;
+  background:#ffffff;
+  z-index:9999;
+  vertical-align:middle;
+}
+
+#innerLoader {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+
+#wrapper {
+  position: relative; max-width: 1200px; width: 1200px; height: calc(100% - 200px); margin-left: auto; margin-right: auto; background-color: #e6e6e6;
+}
+ 

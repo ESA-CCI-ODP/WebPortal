@@ -1,0 +1,93 @@
+/**
+ * Cookie Banner - Main CSS file
+ */
+#cookie-banner {
+    -webkit-transform: translateZ(0);
+    position: relative;
+    z-index: 300;
+    width: 1250px;
+    margin: 0px auto;
+    color: #fff;
+    background-color: #989a9c;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* On smaller devices stretch the banner fully */
+@media (max-width: 768px) {
+    #cookie-banner {
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Close button */
+#cookie-banner .close {
+    position: absolute;
+    z-index: 305;
+    top: 5px;
+    right: 5px;
+    border: none;
+    margin: 0;
+    padding: 12px;
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA1CAYAAABfsPstAAACO0lEQVRYhd2YbZHbMBCGH3dKIIVgCj4IpWAKCoQchCsEGcIFQg/CGcIZQgJh+8OWKyu7iuyk/tF3JpMPrfaRpVdaTeB/UwUgIrmYGmiBn0ADHKbfr0APfABnYDAhVTV+EBHtVYuIl3L5qc9NrllKoxORywpI0GXqWwRyGwCpFjAN9AxIUGuBatk2XZYuU04AvkXmOEWOitUBP6b3NW2HKefiiWpjVF6W6+cL22LVMehkBB3k1pFegTDFajrFoPfCJ4qTagPQ9B6DvoygHKwEIiLyFYPuKQe7e3qkrrsnzZHab7Zkx6n7vRKy2Qy72Xu3DZsL9NNotfZc2zyYFPRPD9UY9OwyMdckDbRb4du1lMdr9rTLyW7XrRLQw6qqatWh+pC+A3R9NqZo6lxjTx1Ma+Q/1amrGS8XrnDQHfBLA+amzgGfKyBzn67X+2ggB3jWFrVRB8BrsBQUII/Kdz2tBaqBtydAYthcIna7qQZQjb7wHXBktPIxSTi3ueamLciFpwqgVgkCeE2+h4QBkosNamNQYwRpa3Y0klrr25SALBde4y9dj8fecwtQbQTlYEE5yJx7t5tqAOUOxNh5qTQ3phpKQJq7IHmSjL1hPOFn0IcRpLnLozvMsvcCdDaC0oRh4TWDWPY+x6ABY2fz9yRP3TW3ZezdhfoUF76asQZtKQ+arsCLaxjSwjdgz/MWvcbVNt1HlsvW6uia5VJoGza3b+7pqkEsUIC9kN+Iah8NAvlbUNDD1635j8E99AfFl0/CdPxDCwAAAABJRU5ErkJggg==');
+    background-position: 0 0;
+}
+
+#cookie-banner .close:hover,
+#cookie-banner .close:focus {
+    background-position: 0 27px;
+}
+
+#cookie-banner .close span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Cookie banner text */
+#cookie-banner p {
+    padding: 0px 250px;
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+#cookie-banner p a {
+    color: #9cf;
+    font-size: 13px;
+    display: block;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    #cookie-banner p {
+        font-size: 16px;
+    }
+}
+
+#cookie-banner p a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.btn-close {
+    width: 26%;
+    background-color: #0098db;
+    color: #fff;
+    border: none;
+    height: 35px;
+    font-size: 19px;
+    margin: 5px 0px;
+}
+
+.btn-close:hover {
+    background-color: #1c5e92;
+}

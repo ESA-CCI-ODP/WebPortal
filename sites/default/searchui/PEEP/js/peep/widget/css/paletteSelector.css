@@ -1,0 +1,13 @@
+.paletteSelector { width: auto; height: auto; }
+
+.paletteSelectorTitle {
+  font-weight: bold; padding: .5em 1.5em; color: black;
+}
+
+.paletteSelectorPaneContent { background-color: #f0f0f0; padding: .5em 1.5em; }
+
+.paletteSelectorBandSelector {text-align: center; font-size: 0.9em; }
+.paletteSelectorSelectLabel  { font-weight: bold; }
+.paletteSelectorBandSelect   {}
+.paletteSelectorBarSelect    { top: 4em; left: 0px; bottom: 0px; right: 0px; padding: 1em; overflow: auto;}
+.paletteSelectorBar          { float: left; width: 40px; height: 250px; }

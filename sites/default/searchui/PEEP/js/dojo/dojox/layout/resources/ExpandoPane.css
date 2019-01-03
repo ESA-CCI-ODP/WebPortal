@@ -1,0 +1,136 @@
+	/* dojox.layout.ExpandoPane */
+
+	.dojoxExpandoPane {
+		overflow:hidden;
+		z-index:440 !important;
+	}
+	
+	.dojoxExpandoPane .dojoxExpandoWrapper {
+		overflow:hidden;
+	}
+
+	.dojoxExpandoClosed .dojoxExpandoTitleNode {
+		display:none;
+	}
+
+	/* hide all layout children scrollbars when closed */
+	.dojoxExpandoClosed .dojoxExpandoWrapper * {
+		overflow:hidden !important;
+	}
+
+	.dojoxExpandoTitleNode {
+		padding-right:3px; 
+		padding-left:3px;
+	}
+
+	.dojoxExpandoIcon .a11yNode {
+		display:none;
+		visibility:hidden;
+	}
+
+	.dojoxExpandoBottom .dojoxExpandoIcon,
+	.dojoxExpandoTop .dojoxExpandoIcon,
+	.dojoxExpandoLeft .dojoxExpandoIcon {
+		float:right;
+	}
+
+	.dojoxExpandoRight .dojoxExpandoIcon {
+		float:left;
+	}
+
+	.dojoxExpandoIcon {
+		width:14px;
+		cursor:pointer;
+		background-position:-60px 0px;
+		background-repeat: no-repeat;
+		height:14px;
+	}
+
+	.dojoxExpandoClosed .dojoxExpandoIcon {
+		background-position: 0px 0px;
+		margin:0 auto;
+	}
+	
+	.dijitBorderContainer-dijitExpandoPane {
+		border: none !important; 
+	}
+
+	
+	/* peep styles */
+	.peep .dojoxExpandoTitle {
+		padding: 4px 0px;
+		background: #fafafa url("../images/topBarBgLight.png") repeat-x left bottom;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+	
+	}
+		
+	.peep .dojoxExpandoClosed .dojoxExpandoTitle {
+		background: none;
+		background-color: #e0e0e0;
+		border: none;
+		padding:0px;
+	}
+	
+  .peep .leftSideBar .dojoxExpandoClosed {
+    background: #e0e0e0;
+    border-right: 1px solid #a0a0a0 !important;
+    height: 100%;
+  }
+  .peep .rightSideBar .dojoxExpandoClosed {
+    background: #e0e0e0;
+    border-left: 1px solid #a0a0a0 !important;
+    height: 100%;
+}
+
+  .peep .dojoxExpandoRight .dojoxExpandoTitle,
+	.peep .dojoxExpandoLeft .dojoxExpandoTitle,
+	.peep .dojoxExpandoClosed .dojoxExpandoTitle,
+	.peep .dojoxExpandoClosed {
+		background-color: #e0e0e0;
+	}
+	
+	.peep .dojoxExpandoIcon {
+		background-image: url('../images/spriteRoundedIconsSmall.gif');
+	}
+	
+	.peep .dojoxExpandoClosed .dojoxExpandoIconLeft,
+	.peep .dojoxExpandoClosed .dojoxExpandoIconRight,
+	.peep .dojoxExpandoClosed .dojoxExpandoIconTop,
+	.peep .dojoxExpandoClosed .dojoxExpandoIconBottom {
+		margin-top: 3px;
+	}
+	
+	/* open/closed states */
+	
+	.dojoxExpandoClosed .dojoxExpandoIcon {
+		margin-right:0px;
+	}
+	.dojoxExpandoIconLeft {
+	  background-position: 0 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconLeft {
+	  background-position: -30px 0;
+		margin-right: 4px;
+	}
+	.dojoxExpandoIconRight {
+	  background-position: -30px 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconRight {
+	  background-position: 0 0;
+		margin-left: 4px;
+	}
+	.dojoxExpandoIconBottom {
+	  background-position: -15px 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconBottom {
+	  background-position: -45px 0;
+		margin-top:1px;
+	}
+	.dojoxExpandoIconTop {
+	  background-position: -45px 0;
+	}
+	.dojoxExpandoClosed .dojoxExpandoIconTop {
+	  background-position: -15px 0;
+	}

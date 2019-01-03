@@ -1,0 +1,6 @@
+<!--MD-->
+###History Control
+
+Only active if there have been previous actions. Click the forward/backward controls to
+move to the previous or next view state (i.e. Undo/Redo) ... works with zoom and pan. 
+The small arrows are coloured red and/or green if there is a usable history.

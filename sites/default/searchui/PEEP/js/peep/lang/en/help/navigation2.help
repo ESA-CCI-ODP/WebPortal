@@ -1,0 +1,52 @@
+<!--MD-->
+###Using the Map Navigation Controls
+The map navigation controls are split between two locations. At the top left of the main map area are the viewport position, zoom 
+and view history controls, and at top right are the drawing controls.
+
+**Viewport Controls**
+The viewport controls are split into three areas. 
+
+<img src='images/HELP/MapNav1.png' style='float: left; padding-right: 10px; ' />
+
+- **The Movement Controls** - 
+The top set (the up/down/right/left arrow buttons) cause the map to move within the 
+viewport. The direction indicated by the arrows is the equivalent of eye movement. i.e. If you wish to see more at the top of the 
+view then click on the up arrow to 'look up' etc.
+
+- **The Zoom Controls** - 
+The second set of controls (the plus/minus and world buttons) cause ther view to zoom in/out. The '+' will 
+zoom into the view by one zoom step per click, the '-' will zoom out one zoom step, and the 'world' button (between the '+' and '-') 
+will zoom out to the full viewable extent of the map. ***N.B. This is not the viewable extent of the data in the layer, it is the 
+world view defined by the maximum zoom extent of the map base layer currently in use.***
+
+- **The History Controls** - 
+ The lowest of the three sets of controls are the viewport history buttons. Using these you are able to 
+recall a previous state of the viewport. Once the state has been changed by user interaction the buttons are coloured (see the 'back'
+history button in the image the arrow is red - The forward button colours green). Clicking on the back or forward control will 
+change the view one step per click through the view history. This can be particularly useful if you hit the world zoom button in 
+error when trying to zoom in/out. A click on the back history control will bring back the previous view.
+
+<hr />
+
+**Drawing and Base Layer Controls**
+In the data visualiser most of the native OpenLayers drawing controls are disabled. The active ones are the move and line draw
+buttons. Both are toggles, and when active the button background colour changes from pale gray to beige. 
+
+<img src='images/HELP/MapNav2.png' style='float: left; padding-right: 10px; ' />
+
+- **The Move Control** - (the hand)
+When a layer is first opened the move control is active by default. This permits you to press and hold the mouse button 
+and then drag the view around within the viewport. Clicking on the control will cause the visualiser to ignore this action.
+
+- **The Line Draw Control** - (the polygon with dots)
+With this control active, clicking on the map once will fix a point as the start of a line, moving the mouse will cause a line to
+be stretched from the start point until the next click, which lays down another fixed point, and so on. A double click causes the
+last point to be fixed, and then a plot of the data points along the line is displayed in a pop up window.
+
+<img src='images/HELP/MapNav3.png' style='float: left; padding-right: 10px; ' />
+
+- **The Base Layer Selector Control** -
+Clicking on the blue arrow control to the right of the drawing controls causes the base layer selection control to open. From the
+list in the control you can select which base layer you wish to use to support the map overlay layers. ***N.B. The list of base 
+layers may differ from the ones in the image depending on specific implementations.***  
+

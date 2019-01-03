@@ -1,0 +1,62 @@
+<!--HTML-->
+<script>
+function youClicked(thing) {
+  require['peep/core/core'], function(core) {
+      var _helpFile = core.langBaseDir+'/help/'+thing+'.quick';
+  });
+}
+</script>
+
+<img src='images/HELP/helpKey.png' />
+<div id='layerSelHelp' class='helpHotspot' style='top:38px;  left:3px;   height:200px; width:95px;'
+     onClick = 'peepUserGuide.youClicked("layer")'  ></div>
+<div id='dateSelHelp'  class='helpHotspot' style='top:267px; left:3px;   height:10px;  width:95px;'
+     onClick = 'peepUserGuide.youClicked("date")' ></div>
+
+<div id='navHelp1'     class='helpHotspot' style='top:30px;  left:105px; height:30px;  width:25px;'
+     onClick = 'peepUserGuide.youClicked("nav")'  ></div>
+<div id='zoomHelp1'    class='helpHotspot' style='top:60px;  left:105px; height:30px;  width:25px;'
+     onClick = 'peepUserGuide.youClicked("zoom")'  ></div>
+<div id='historyHelp1' class='helpHotspot' style='top:90px;  left:105px; height:30px;  width:25px;'
+     onClick = 'peepUserGuide.youClicked("history")'  ></div>
+
+<div id='scaleHelp1'   class='helpHotspot' style='top:28px;  left:432px; height:190px; width:64px;'
+     onClick = 'peepUserGuide.youClicked("scale")'  ></div>
+<div id='autoHelp1'    class='helpHotspot' style='top:235px; left:432px; height:50px;  width:64px;'
+     onClick = 'peepUserGuide.youClicked("auto")'  ></div>
+
+<div id='titleHelp1'   class='helpHotspot' style='top:15px;  left:200px; height:12px;  width:135px;'
+     onClick = 'peepUserGuide.youClicked("title")' ></div>
+<div id='dateHelp1'    class='helpHotspot' style='top:277px; left:105px; height:12px;  width:110px;'
+     onClick = 'peepUserGuide.youClicked("timeday")' ></div>
+<div id='coordsHelp1'  class='helpHotspot' style='top:277px; left:330px; height:12px;  width:100px;'
+     onClick = 'peepUserGuide.youClicked("coords")' ></div>
+
+<div id='drawHelp1'    class='helpHotspot' style='top:28px;  left:382px; height:15px;  width:15px;'
+     onClick = 'peepUserGuide.youClicked("transect")'  ></div>
+<div id='dragHelp1'    class='helpHotspot' style='top:28px;  left:415px; height:15px;  width:15px;'
+     onClick = 'peepUserGuide.youClicked("drag")'  ></div>
+<div id='baseSelHelp1' class='helpHotspot' style='top:40px;  left:420px; height:15px;  width:15px;'
+     onClick = 'peepUserGuide.youClicked("baselayer")'  ></div>
+
+<div id='bodyHelp1'    class='helpHotspot' style='top:40px;  left:160px; height:220px;  width:220px;'
+     onClick = 'peepUserGuide.youClicked("body")'></div>
+     
+<div id='errorHelp1'   class='helpHotspot' style='top:245px; left:340px; height:30px;  width:93px;'
+     onClick = 'peepUserGuide.youClicked("errors")'></div>
+     
+<div id='quickHint'><h3>Features - Quick Look</h3>
+<br /><br />
+Click on any of the yellow shaded areas to see a quick description of their use or purpose. More detailed explanations can be viewed
+by selecting the appropriate option in the main menu to the left of this pane.
+<hr /><br />
+This client software is copyright Telespazio-Vega Ltc (2013). It was written using the following Open Source frameworks:
+<br /><br />
+<a href='http://openlayers.org/'>OpenLayers</a> map management tools<br />
+<a href='http://dojotoolkit.org/'>dojo</a> Javascript Framework.<br /><br />
+and was derived from Godiva2 (part of the ncWMS suite).
+<br /><br />
+Godiva2 and the ncWMS server are Open Source developments by <a href='http://www.resc.reading.ac.uk/'>The University of Reading 
+e-Science Centre</a>.
+<br /><br />
+</div>

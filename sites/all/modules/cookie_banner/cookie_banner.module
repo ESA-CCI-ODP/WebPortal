@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * Main module file.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function cookie_banner_menu() {
+  $items['admin/config/system/cookie-banner'] = array(
+    'title' => 'Cookie Banner',
+    'description' => 'Comply with the EU Directive on Privacy and Electronic Communications.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('cookie_banner_admin_form'),
+    'access arguments' => array('administer cookie banner'),
+    'file' => 'cookie_banner.admin.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function cookie_banner_permission() {
+  return array(
+    'administer cookie banner' => array(
+      'title' => 'Administer Solas EU Cookie Compliance'
+    ),
+  );
+}
+
+/**
+ * Implements hook_init().
+ */
+function cookie_banner_init()
+{
+    error_reporting(E_ALL ^ E_DEPRECATED);
+    if (!user_is_logged_in()) {
+
+        $lang = $GLOBALS['language']->language;
+
+        $theme_params['use_cookie_message'] = variable_get('cookie_banner_use_cookie_message_' . $lang, 'This site uses cookies to help make it more useful to you.');
+        $theme_params['more_info_message'] = variable_get('cookie_banner_more_info_message_' . $lang, 'Find out more about cookies.');
+        $theme_params['more_info_url'] = url(variable_get('cookie_banner_more_info_url_' . $lang, 'about/cookie-policy'));
+
+        $jsvars['cookie_banner_message'] = theme('cookie_banner_message', $theme_params);
+        $jsvars['cookie_banner_name'] = variable_get('cookie_banner_name_' . $lang, $_SERVER['HTTP_HOST'] . "-cookie");
+        $jsvars['cookie_banner_duration'] = time() + (60 * 60 * 24 * 90);
+
+        // Required CSS.
+        drupal_add_css(drupal_get_path('module', 'cookie_banner') . '/css/cookie_banner.css');
+        if ($GLOBALS['language']->direction) {
+            drupal_add_css(drupal_get_path('module', 'cookie_banner') . '/css/cookie_banner_rtl.css');
+        }
+
+        // Required JS.
+
+        drupal_add_js(drupal_get_path('module', 'cookie_banner') . '/js/cookie_banner.js');
+
+        // Required JS vars.
+        drupal_add_js(array('cookie_banner' => $jsvars), 'setting');
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cookie_banner_theme()
+{
+    return array(
+        'cookie_banner_message' => array(
+            'variables' => array(
+                'use_cookie_message' => NULL,
+                'more_info_message' => NULL,
+                'more_info_url' => NULL
+            ),
+        ),
+    );
+}
+
+function theme_cookie_banner_message($variables)
+{
+    $output = '<div id="cookie-banner">';
+    $output .= '<p>' . $variables['use_cookie_message'];
+    $output .= '<a href="' . $variables['more_info_url'] . '" target="_blank">' . $variables['more_info_message'] . '</a> </p>';
+    $output .= '<button class="btn-close"> <span> Ok </span></button>';
+    $output .= '</div>';
+    return $output;
+}

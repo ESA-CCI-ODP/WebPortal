@@ -1,0 +1,152 @@
+.peep .dijitTitlePane .dijitTitlePaneTitle {
+	background: #626262;
+	color: white;
+	cursor: pointer;
+  padding: 4px;
+}
+
+/* TODO: merge these, and all other icons to a series of background-image:() and background-position: -16*n px styles */
+.peep .dijitTitlePane .dijitArrowNode {
+	width:16px;
+	height:16px;
+	float:right;
+}
+
+
+.peep .dijitTitlePane .dijitClosed {
+ }
+
+.peep .dijitTitlePane .dijitClosed .dijitArrowNode {
+	background:url('../images/menuFolderClosed.gif') no-repeat center center;
+}
+
+.dj_ie6 .peep .dijitTitlePane .dijitClosed .dijitArrowNode {
+	background-image:url('../images/menuFolderClosed.gif');
+}
+
+.peep .dijitTitlePane .dijitOpen .dijitArrowNode {
+	background:url('../images/menuFolderOpened.gif') no-repeat center center;
+}
+.dj_ie6 .peep .dijitTitlePane .dijitOpen .dijitArrowNode {
+	background-image:url('../images/menuFolderOpened.gif');
+}
+
+.peep .dijitTitlePaneFocused .dijitTitlePaneTextNode {
+	text-decoration:underline;
+}
+.peep .dijitTitlePane .dijitArrowNodeInner {
+	visibility:hidden;
+}
+.dijit_a11y .dijitTitlePane .dijitArrowNodeInner {
+	visibility:visible;
+}
+
+.peep .dijitTitlePaneTitle .dijitOpenCloseArrowOuter {
+	margin-right:5px;
+}
+
+.peep .dijitOpen .dijitTitlePaneTitle .dijitOpenCloseArrowOuter {
+	position:relative;
+	top:2px;
+}
+
+.peep .dijitTitlePaneContentOuter {
+	background: #f0f0f0;
+/*	border:1px solid #bfbfbf;
+	border-top: 1px solid #ccc;	/* w/out this, an <h1> on the top line causes a gap between the .content and .label */
+ 	}
+.peep .dijitTitlePaneContentInner {
+	padding:10px;
+}
+/* force hasLayout to ensure borders etc, show up */
+.dj_ie6 .peep .dijitTitlePaneContentOuter,
+.dj_ie6 .peep .dijitTitlePane .dijitTitlePaneTitle {
+	zoom: 1;
+}
+.peep .dijitClickableRegion {
+	background-color : #ffc !important;
+}
+
+/* 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+AND NOW THE HEAD TITLE PANE .. different colouiring etc !! 
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/
+
+.peep .dijitHeadTitlePane .dijitHeadTitlePaneTitle {
+	background: #626262; color: white; 
+	font-size: 0.8em; font-weight: bold;
+	cursor: pointer;
+  padding: 4px;
+}
+.peep .dijitHeadTitlePane .dijitArrowNode {
+	width:16px;
+	height:16px;
+	float:right;
+}
+.peep .dijitTitlePane .dijitKillMeNode {
+	width:16px;
+	height:16px;
+	float:right;
+}
+
+.peep .dijitHeadTitlePane .dijitClosed { }
+
+.peep .dijitTitlePane .dijitKillMeNode {
+	background:url('../images/closeButton.gif') no-repeat center center;
+}
+.dj_ie6 .peep .dijitHeadTitlePane dijitKillMeNode {
+	background-image:url('../images/closeButton.gif');
+}
+
+
+.peep .dijitHeadTitlePane .dijitClosed .dijitArrowNode {
+	background:url('../images/menuFolderClosed.gif') no-repeat center center;
+}
+.dj_ie6 .peep .dijitHeadTitlePane .dijitClosed .dijitArrowNode {
+	background-image:url('../images/menuFolderClosed.gif');
+}
+
+
+.peep .dijitHeadTitlePane .dijitOpen .dijitArrowNode {
+	background:url('../images/menuFolderOpened.gif') no-repeat center center;
+}
+
+.dj_ie6 .peep .dijitHeadTitlePane .dijitOpen .dijitArrowNode {
+	background-image:url('../images/menuFolderOpened.gif');
+}
+
+
+.peep .dijitHeadTitlePaneFocused .dijitHeadTitlePaneTextNode {
+	text-decoration:underline;
+}
+
+.peep .dijitHeadTitlePane .dijitArrowNodeInner {
+	visibility:hidden;
+}
+.dijit_a11y .dijitHeadTitlePane .dijitArrowNodeInner {
+	visibility:visible;
+}
+
+.peep .dijitHeadTitlePaneTitle .dijitOpenCloseArrowOuter {
+	margin-right:5px;
+}
+
+.peep .dijitOpen .dijitHeadTitlePaneTitle .dijitOpenCloseArrowOuter {
+	position:relative;
+	top:2px;
+}
+
+.peep .dijitHeadTitlePaneContentOuter {
+	background: #f0f0f0;
+	border-top: 2px solid #c0c0c0;	/* w/out this, an <h1> on the top line causes a gap between the .content and .label */
+ }
+ 
+.peep .dijitHeadTitlePaneContentInner {
+	padding:10px;
+}
+/* force hasLayout to ensure borders etc, show up */
+.dj_ie6 .peep .dijitHeadTitlePaneContentOuter,
+.dj_ie6 .peep .dijitHeadTitlePane .dijitHeadTitlePaneTitle {
+	zoom: 1;
+}

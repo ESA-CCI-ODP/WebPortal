@@ -1,0 +1,8 @@
+@import url("dijit.css" );                                        /* the lowest common denominator for dijit widgets - don't touch it  */
+@import url("base.css" );                                         /* the standard fallback set of styles for use throughout the system */
+@import url("ol_controls.css" );                                  /* the styling for the OpenLayers control buttons etc                */
+@import url("Portal.css" );                                       /* the layout styling for the Portal divs                            */
+@import url("themes/PEEP/peep.css");                              /* the loader for all the custom styles in the theme directory       */
+@import url("Pages/pages.css" );                                  /* The object styles and classes associated with SYSTEM pages        */
+@import url("../js/dojo/dojox/layout/resources/ExpandoPane.css" );/* The (heavily modified) style sheet for the dojox expando panes    */
+@import url("../js/peep/widget/css/widgets.css");                 /* The locally defined, templated widgets */

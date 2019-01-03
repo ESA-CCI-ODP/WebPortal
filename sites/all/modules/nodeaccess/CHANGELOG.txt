@@ -1,0 +1,9 @@
+Nodeaccess 6.x-1.x
+===================
+Issue [#436918]: Aliases are not being saved for disabled roles.
+Issue [#557344]: Invalid argument in nodeaccess_delete_userreference.
+
+Nodeaccess 6.x-1.4
+===================
+A number of bug fixes, including:
+Issue [#306541] by gianfrasoft: Strange behavior anonymous content management.

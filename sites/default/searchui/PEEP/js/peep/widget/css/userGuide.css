@@ -1,0 +1,45 @@
+.ugTitle {
+	width: 100%; top: 0em; font-size: 2em; color: #484848; 
+	text-align: center; padding: .3em 0;
+	background-color: #e0e0e0; border-bottom: 1px solid #484848;
+}
+.ugPane { 
+	position: relative; top: 1%; width: 98%; height: 98%;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border: 1px solid #484848;
+}
+
+.ugDialogPaneContent {
+	background-color: #f0f0f0; padding: .5em 1.5em; position: relative;
+}
+
+.ugIndex {
+	position: absolute; width: 29%; top: 1em; left: 1%;  overflow: auto;
+}
+
+.ugPage {
+	position: absolute; width: 69%; top: 1em; left: 31%; overflow: auto;
+}
+
+.ugDivider {
+  position: absolute; top: 0px; height: 100%; width: 1px; left: 30%; height: 100%;
+  background-color: #a0a0a0;
+}
+
+.ugIndexLine {
+	padding: 0.5em; cursor: pointer;
+}
+
+.ugText {
+	padding: 1em; text-align: justify;
+}
+
+.ugImage {
+	padding: 0.5em 1em 0.5em 0em; float: left;
+}
+
+.ugHotspot {
+	position: absolute; cursor: pointer; background-color: yellow; opacity:0.3; border: 1px solid black;
+}
+

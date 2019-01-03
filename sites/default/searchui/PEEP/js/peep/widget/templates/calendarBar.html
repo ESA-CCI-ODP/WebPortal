@@ -1,0 +1,74 @@
+<div class='${baseClass}'>
+	<!-- The title line of the widget -->
+	<div class='${baseClass}Headline'>
+		<span data-dojo-attach-point='headline'></span>
+  </div>
+	<div class='calendarContainer' data-dojo-attach-point='calWrapper'>
+	</div>
+	 <!-- This is the z-Axis value selector -->
+  <div class='timePickerHidden' data-dojo-attach-point='timePicker'>
+  	<div class='tSelectTitle' title='' 
+		     data-dojo-attach-point='tSelectTitle'></div>
+  	<!-- the select element will be populated by the widget -->
+     <select class='tSelect' disabled=false
+            data-dojo-attach-point='tSelector'
+						data-dojo-attach-event='change: _timeValueChanged'>
+    </select>
+  </div>
+	<div class='timeFrame'>
+		<hr />
+		${_messages.timeSequenceOptions}
+		<br /><br />
+    <div  class='timeFramePrompt' 
+		      title='${_messages.timeStepFirstToolTip}'
+		      data-dojo-attach-point='firstFrame'
+          data-dojo-attach-event='click: _setFirstFrame'
+		>
+        ${_messages.timeStepFirstPrompt}
+    </div>
+    <div class='tHidden' data-dojo-attach-point='startTime'>
+   	  <span class='selTime'> </span>
+    </div>
+    <div  class='timeFramePrompt' 
+		      title='${_messages.timeStepLastToolTip}'
+          data-dojo-attach-point='lastFrame'
+          data-dojo-attach-event='click: _setLastFrame'
+		>
+        ${_messages.timeStepLastPrompt}
+    </div>
+     <div class='tHidden' data-dojo-attach-point='endTime'  >
+          <span class='selTime'> </span>
+    </div>
+	</div>
+	<br /><br />
+  <div class='tHidden' data-dojo-attach-point='animateOptions' > 
+	  <div class='timeFrame'> 
+			<div class='tSelectTitle' title=''>
+				${_messages.frameSelectTitle}
+			</div>
+			<select class='fSelect' disabled=false
+		          data-dojo-attach-point='frameSelector'
+		          data-dojo-attach-event='change: _frameCountChanged'>
+		  </select>
+      <div  class='timeFramePrompt'
+            title='${_messages.animateButtonToolTip}'
+            data-dojo-attach-event='click: _makeAnimation' >
+        ${_messages.animateButtonPrompt}
+      </div>
+			<div class='toggler'>
+				<div class='tHidden' data-dojo-attach-point='toggleButton' > 
+	       <div  class='timeFramePrompt'
+                title='${_messages.animateToggleToolTip}'
+                data-dojo-attach-event='click: _toggleAnimation' >
+            ${_messages.animateTogglePrompt}
+          </div>
+          <div  class='timeFramePrompt'
+                title='${_messages.animateClearToolTip}'
+                data-dojo-attach-event='click: clearAnimation' >
+            ${_messages.animateClearPrompt}
+          </div>
+			  </div>
+		  </div>
+	  </div>
+	</div>
+</div>

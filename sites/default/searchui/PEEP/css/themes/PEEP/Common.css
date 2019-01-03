@@ -1,0 +1,58 @@
+/* body { background: url('/images/SYS/generic/big_bg.png'); } */
+body { overflow: hidden; }
+
+/**** Disabled cursor *****/
+.peep .dijitSliderDisabled *,
+.peep .dijitDisabledClickableRegion,	/* a region the user would be able to click on, but it's disabled */
+.peep .dijitSpinnerDisabled *,
+.peep .dijitButtonDisabled *,
+.peep .dijitDropDownButtonDisabled *,
+.peep .dijitComboButtonDisabled *,
+.peep .dijitComboBoxDisabled *
+{
+	cursor: not-allowed !important;
+}
+
+/* DnD avatar-specific settings */
+/* For now it uses a default set of rules. Some other DnD classes can be modified as well. */
+.peep .dojoDndItemBefore {
+	border-top: 2px solid #369;
+}
+
+.peep .dojoDndItemAfter {
+	border-bottom: 2px solid #369;
+}
+
+.peep .dojoDndItemOver {
+	cursor:pointer;
+}
+
+.peep .portalGridContainer {  background: transparent; }
+
+.peep table.dojoDndAvatar { -moz-border-radius: 0; border: 1px solid #ccc; border-collapse: collapse; background-color: #fff; font-size: 75%; color: black;}
+.peep .dojoDndAvatar td	{ border: none; }
+.peep .dojoDndAvatar tr	{ border: none; }
+.peep .dojoDndAvatarHeader td	{ height: 20px; padding: 0 0 0 21px; }
+.peep .dojoDndAvatarItem td { padding: 2px;}
+.talos.dojoDndMove .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.talos.dojoDndCopy .dojoDndAvatarHeader	{background-color: #f58383; background-image: url(images/dndNoCopy.png); background-repeat: no-repeat; background-position: 2px center;}
+.talos.dojoDndMove .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndMove.png); background-repeat: no-repeat; background-position: 2px center;}
+.talos.dojoDndCopy .dojoDndAvatarCanDrop .dojoDndAvatarHeader	{background-color: #97e68d; background-image: url(images/dndCopy.png); background-repeat: no-repeat; background-position: 2px center;}
+
+.peep .dijitContentPaneLoading {
+	background:url('images/loading.gif') no-repeat left center;
+	padding-left:25px;
+}
+
+.peep .dijitContentPaneError {
+	background:url('images/warning.png') no-repeat left center;
+	padding-left:25px;
+}
+
+.peep .Anchor {
+  color: #d0103a;
+}
+
+.peep .AnchorHover {
+  color: #822433; cursor: pointer;
+}

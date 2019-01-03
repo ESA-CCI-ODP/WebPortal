@@ -1,0 +1,4 @@
+name = "ckeditor-feature"
+description = "Configuration of ckeditor"
+core = "6.x"
+package = "Features"

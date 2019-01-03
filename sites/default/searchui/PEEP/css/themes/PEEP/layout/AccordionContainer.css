@@ -1,0 +1,47 @@
+/* Accordion */
+
+.peep .dijitAccordionContainer {
+}
+
+.peep .dijitAccordionPane {
+	 background-color: #f0f0f0;
+   border-left: 1px solid #ccc;
+   border-right: 1px solid #ccc;
+}
+
+.peep .dijitAccordionTitle {
+	color: #606060;
+	padding: 4px 0px;
+	cursor:pointer;
+  font-weight: normal;
+  border-top: 1px solid #ccc;
+}
+
+.peep .leftSideBar .dijitAccordionTitle {
+	background-color: #a0a0a0;
+  background: url("../images/topBarBgLight.png") repeat-x left bottom;
+}
+
+.peep .dijitAccordionTitleSelected  {
+	cursor: default;
+}
+
+.peep .leftSideBar .dijitAccordionTitleSelected {
+  color:black;
+}
+
+.peep .dijitAccordionArrow {
+}
+
+.peep .dijitAccordionTitleSelected .dijitAccordionArrow {
+	background:none;
+	margin-top:2px;
+}
+
+.peep .dijitAccordionBody {
+	background: #f0f0f0;
+}
+
+.peep .leftSideBar .dijitAccordionContainer {
+	border-right: 1px solid #ccc;
+}

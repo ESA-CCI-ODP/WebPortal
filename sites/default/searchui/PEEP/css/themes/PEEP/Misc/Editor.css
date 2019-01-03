@@ -1,0 +1,78 @@
+.dijitIEFixedToolbar {
+	position:absolute;
+	/* top:0; */
+	top: expression(eval((document.documentElement||document.body).scrollTop));
+}
+
+.peep .dijitToolbar .dijitToolbarSeparator {
+	background: url('../images/editor.gif');
+}
+
+.peep .dijitEditorIcon {
+	background-image: url('../images/editor.gif'); /* editor icons sprite image */
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+.peep .dijitEditorIconSep { background-position: 0px; }
+.peep .dijitEditorIconBackColor { background-position: -18px; }
+.peep .dijitEditorIconBold { background-position: -36px; }
+.peep .dijitEditorIconCancel { background-position: -54px; }
+.peep .dijitEditorIconCopy { background-position: -72px; }
+.peep .dijitEditorIconCreateLink { background-position: -90px; }
+.peep .dijitEditorIconCut { background-position: -108px; }
+.peep .dijitEditorIconDelete { background-position: -126px; }
+.peep .dijitEditorIconForeColor { background-position: -144px; }
+.peep .dijitEditorIconHiliteColor { background-position: -162px; }
+.peep .dijitEditorIconIndent { background-position: -180px; }
+.peep .dijitEditorIconInsertHorizontalRule { background-position: -198px; }
+.peep .dijitEditorIconInsertImage { background-position: -216px; }
+.peep .dijitEditorIconInsertOrderedList { background-position: -234px; }
+.peep .dijitEditorIconInsertTable { background-position: -252px; }
+.peep .dijitEditorIconInsertUnorderedList { background-position: -270px; }
+.peep .dijitEditorIconItalic { background-position: -288px; }
+.peep .dijitEditorIconJustifyCenter { background-position: -306px; }
+.peep .dijitEditorIconJustifyFull { background-position: -324px; }
+.peep .dijitEditorIconJustifyLeft { background-position: -342px; }
+.peep .dijitEditorIconJustifyRight { background-position: -360px; }
+.peep .dijitEditorIconLeftToRight { background-position: -378px; }
+.peep .dijitEditorIconListBulletIndent { background-position: -396px; }
+.peep .dijitEditorIconListBulletOutdent { background-position: -414px; }
+.peep .dijitEditorIconListNumIndent { background-position: -432px; }
+.peep .dijitEditorIconListNumOutdent { background-position: -450px; }
+.peep .dijitEditorIconOutdent { background-position: -468px; }
+.peep .dijitEditorIconPaste { background-position: -486px; }
+.peep .dijitEditorIconRedo { background-position: -504px; }
+.peep .dijitEditorIconRemoveFormat { background-position: -522px; }
+.peep .dijitEditorIconRightToLeft { background-position: -540px; }
+.peep .dijitEditorIconSave { background-position: -558px; }
+.peep .dijitEditorIconSpace { background-position: -576px; }
+.peep .dijitEditorIconStrikethrough { background-position: -594px; }
+.peep .dijitEditorIconSubscript { background-position: -612px; }
+.peep .dijitEditorIconSuperscript { background-position: -630px; }
+.peep .dijitEditorIconUnderline { background-position: -648px; }
+.peep .dijitEditorIconUndo { background-position: -666px; }
+.peep .dijitEditorIconWikiword { background-position: -684px; }
+.peep .dijitEditorIconWrite { background-position: -702px; }
+.peep .dijitEditorIconUnlink { background-position: -720px; }
+.peep .dijitEditorIconViewSource { background-position: -774px; }
+.peep .dijitEditorIconToggleDir { background-position: -540px;}
+
+/* this bit is for the extra (dojox) plugins not included in the original strip
+/* one day I'll paint an icon strip for these like the inbuilt ones */
+
+.peep .dijitAdditionalEditorIcon {
+	background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+
+/* until then they all get an individual icon assigned */
+.peep .dijitAdditionalEditorIconInsertAnchor { 
+	background-image: url('/js/dojo/talos/form/editor/plugins/resources/icons/anchor.gif');
+}
+
+
+

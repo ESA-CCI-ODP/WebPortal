@@ -1,0 +1,8 @@
+<!--MD-->
+###Getting Inline Help
+
+Clicking the **HELP** button will cause this user guide to be displayed in a pop-up dialog on top of the main map display to save
+you the need to go back to the userGuide pages during data visualisation. 
+
+<img src='images/HELP/dialogClose.png' style = 'float: left; padding right: 5px; padding-bottom: 5px; ' />
+The dialog can be closed in the usual way, by clicking on the small 'collapse' icon on the right side of the dialog title bar.

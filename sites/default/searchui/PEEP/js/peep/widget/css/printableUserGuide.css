@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+html, body { font-family: Verdana, Helvetica, Arial, Geneva, sans-serif; font-size: 10pt; color: #000000;
+              margin: 0px;
+              padding: 0px; 
+              border: 0px;
+              background-color: #e6e6e6;
+              overflow: auto;
+}
+
+body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+       -moz-box-sizing:    border-box;
+       -webkit-box-sizing: border-box;
+        box-sizing:        border-box;
+}
+
+.pugTitle {
+	width: 100%; top: 0em; font-size: 2em; color: #484848; 
+	text-align: center; padding: .3em 0;
+	background-color: #e0e0e0; border-bottom: 1px solid #484848;
+}
+.pugPane { 
+	position: relative; top: 1%; width: 98%;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        border: 1px solid #484848;
+}
+
+.pugDialogPaneContent {
+	background-color: #f0f0f0; padding: .5em 1.5em; position: relative;
+}
+
+.pugIndex {
+	position: relative; width: 40%; 
+	margin-left: auto; margin-right: auto;
+	overflow: auto; page-break-after: always;
+}
+
+.pugPage {
+	position: relative; width: 85%; overflow-y: visible; margin-left: auto; margin-right: auto;
+}
+
+.pugArticle{ 
+  position: relative; page-break-after: always;
+}
+
+p.pugIndexLine {
+	padding: 0.5em;
+}
+
+.pugText {
+	padding: 1em; text-align: justify;
+}
+
+.pugImage {
+	padding: 0.5em 1em 0.5em 0em; float: left;
+}
+
+.pugHotspot {
+	position: absolute; cursor: pointer; background-color: yellow; opacity:0.3; border: 1px solid black;
+}
+

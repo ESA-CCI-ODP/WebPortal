@@ -1,0 +1,10 @@
+<!--MD-->
+###Logarithmic Scale Selector
+
+Clicking this area toggles the scale range between :
+
+- **ON**  - Uses a log scale if possible.
+- **OFF** - Uses a linear scale
+
+The system will generate a non-fatal warning message if you try to use a
+log scale where the data has negative values, and then revert to linear scaling.

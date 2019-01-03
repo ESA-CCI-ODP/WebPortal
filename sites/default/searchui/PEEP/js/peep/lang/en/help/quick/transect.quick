@@ -1,0 +1,13 @@
+<!--MD-->
+###Line Drawing Control
+
+Activate/deactivate this control by clicking on the image. If it is displayed on a soft orange/brown background
+when it is active.
+
+With the tool active, clicking once on the map starts a line draw. Moving the cursor pulls a line
+onto the map, and clicking again terminates the line segment. This can be repeated to build a more 
+complex line from a set of segments.
+
+At the end of the line a double click will cause the map to generate a graphical representation of the
+data points directly below the line. For a multi-segment line, the individual segments are shaded in order
+to mage them easier to identify.

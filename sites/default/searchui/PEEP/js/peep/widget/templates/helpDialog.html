@@ -1,0 +1,18 @@
+<div class="helpDialog" role="dialog" aria-labelledby="${id}_title">
+  <div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+    <span data-dojo-attach-point="titleNode" class="helpDialogTitle" id="${id}_title"
+        role="heading" level="1">Help Sub-System - Empty Page
+		</span>
+    <span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" 
+		      data-dojo-attach-event="ondijitclick: onCancel" 
+		      title="${closeButton}" role="button" tabIndex="-1">
+    </span>
+  </div>
+  <div data-dojo-attach-point="contentNode" class="helpDialogPaneContent">
+  	<div data-dojo-attach-point="indexNode" class='helpIndex'></div>
+		<div class='helpDivider'> </div>
+		<div data-dojo-attach-point="containerNode" class='helpHelp'>
+			<div data-dojo-attach-point="containerNode" style='position: absolute;'></div>
+		</div>
+  </div>
+</div>

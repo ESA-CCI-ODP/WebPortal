@@ -1,0 +1,15 @@
+/**
+ * Cookie Banner - Right to Left support.
+ */
+#cookie-banner {
+  padding: 20px 20px 20px 0;
+}
+
+#cookie-banner .close {
+  right: auto;
+  left:  5px;
+}
+
+#cookie-banner p {
+  margin: 0 0 0 40px;
+}

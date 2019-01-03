@@ -1,0 +1,53 @@
+<!--MD-->
+###Viewing Data at a Point
+
+In addition to being able to view the dataset as a layer overlaid onto the map, it is also possible to extract and view the data for
+a single point or along a transect.
+
+<img src='images/HELP/PointData1.png' style='float: left; padding-right: 10px; ' />
+
+When the move drawing control (the hand) is active, clicking once on anu location on the map will cause a pop up to be displayed.
+Depending upon the circumstances all or some of the options shown here will be available.
+
+The pop-up contains a main display, which is always present, and a conditional display in a shaded box if the current state of the 
+view supports the other options.
+
+- **Main Display Items** - 
+The information in the main window displays the data value and the lat/lon for the location on which you clicked. This is, more
+accurately, the center of the data point nearest to the position you clicked. Data 'points' can be represent large areas according
+to the sampling rate of the device acquiring the data. The display shows the precise location of the click, and in brackets below 
+that it gives the location of the relevant data point.
+
+The main display also the option of using this data value to set the minimum or maximum scale value in order to set up filters on
+the layer. Clicking on the links will automatically set the minimum or maximum scale value to the value displayed. *(For more on 
+scale settings please also refer to the help option "Using the Scale Bar Pane".)*
+
+- **Optional Items** -
+The two optional items are marked (1) and (2) in the image above, and may, or may not be visible.
+
+    1 - ***Z-Axis Value Plot***
+    
+    if the dataset you are viewing has a z-axis element (depth, pressure, height, etc.) then you will be offered the option to 
+    display a plot of the z-axis values at the point on which you clicked. This will appear in a second pop-up.
+    
+    2 - ***Time Series Plot***
+    
+    If you have selected a time series in the Date/Time/Animate Options Panel you will be offered the option to display a time
+    plot of the data values at the point on which you clicked, For the time series which you have selected.
+    
+Below is an example of the option pop-up display. This one is for a time series. The z-axis pop-up has the same appearance.
+
+<img src='images/HELP/timeSeries.png' />
+
+<hr />
+###Viewing Data along a Transect
+
+*(see also help topic "Navigating Around the Map")*
+
+When the Line Draw control is active (the polygon with dots) then clicking on the map once will fix a point as the start of a line. 
+Subsequent movement of the mouse will cause a line to be stretched from the start point until the next click, which fixes another 
+point, and so on. If a line is terminated usi gn a double click then this defines the last point to be fixed, and a plot of the data 
+values along the line is displayed in a pop up window.
+
+<img src='images/HELP/transect.png' style='float: left; padding-right: 10px; ' />
+

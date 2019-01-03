@@ -1,0 +1,16 @@
+name = Nodeaccess
+description = Provides per node access control
+core = 6.x
+
+; Information added by drupal.org packaging script on 2008-01-04
+version = "6.x-1.x-dev"
+project = "nodeaccess"
+datestamp = "1199405206"
+
+
+; Information added by Drupal.org packaging script on 2014-10-07
+version = "6.x-1.5"
+core = "6.x"
+project = "nodeaccess"
+datestamp = "1412640229"
+

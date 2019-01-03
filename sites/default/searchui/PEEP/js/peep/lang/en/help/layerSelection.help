@@ -1,0 +1,38 @@
+<!--MD-->
+###Selecting and Using Layers
+
+The visualiser can request data from any number of data providers. Generally the prime provider will be a local server
+but in some cases the service may be an amalgamation of data provided and hosted by different organisations.
+
+Layers are views on individual data sets or sub-sets and the **Select Layers** pane provides the means to choose which
+layers you wish to display and compare.
+
+<img src='images/HELP/layerSelect.png' />
+
+The layer selection menu is a multi-level tree. The top level being the list of data providers, and the layers beneath that
+either discrete datasets or groups of datasets contained within a single combined database.
+
+Once a layer has selected, its entry will be hilighted. Multiple layers can be loaded into the map, and it is possible to switch 
+between them by clicking the name of the layer you wish to view. The name of the currently active layer is always displayed at
+top-centre of the map display along with its EPSG projection code. 
+
+**If required, an explanation of EPSG Projection codes can be seen, and specific code parameters can be looked up on the 
+<a href='http://www.epsg-registry.org/' target='_blank'>EPSG Registry Web Site</a>**
+
+It is possible to request layers from different servers to display on the same map.
+
+Selecting a new layer will cause the client to retrieve it from the server, render it in the map, and make it the currently active 
+layer. The map will be automatically scaled to display the full extent of the new layer. If you wish to view the new data at the 
+same zoom level as the previous layer, use the History tool to go back one step and the map will re-scale to the previous zoom level 
+(See the *'Navigating Around the Map'* menu item for more detail on the History tool).
+
+***(N.B. It is worth noting that for software reasons, selecting a new layer, or switching between layers will always remove any 
+current animation.)***
+
+Right-clicking an active layer name will pop up a context menu with the (self-explanatory) options:
+
+- Do Nothing/Ignore (in case you clicked in error)
+- Remove all active layers except this one
+- Remove this layer from the active set
+
+

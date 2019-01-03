@@ -1,0 +1,10 @@
+<!--MD-->
+###The Main Map Body
+
+This is where the data is displayed for the currently active layer. You can use the 
+navigation, drawing and zoom controls to perform different functions on the view.
+
+In addition it is possible to click on a specific point to retrieve the data value and 
+coordinates for that precise point. Double-clicking anywhere within the map body will 
+cause the map to zoom to the next level. It is not possible to un-zoom. For that you will
+need to use the history or zoom controls.

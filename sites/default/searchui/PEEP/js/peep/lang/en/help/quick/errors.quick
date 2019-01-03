@@ -1,0 +1,18 @@
+<!--MD-->
+###Error Messages
+
+Errors and warnings appear in a slide-out message box called a 'toaster' in this corner. 
+
+- ***Fatal Errors*** are written in WHITE on a RED background and generally mean that something has happened 
+which will significantly affect the working of the software. you should not continue to use the visualiser
+if you see a fatal message. (e.g. a server has failed to deliver a list of data items to the layer selector)
+
+- ***Errors*** - are written in RED on a WHITE background - These tell you that an error has occurred, but they
+are informative. Such errors do not significantly affect the overall working of the visualiser. 
+(e.g. It has not been possible to load a graph or snapshot)
+
+- ***Warnings*** - are written in GREEN on WHITE and are there to inform only. They are generally indications
+that you have done something unacceptable or incorrect. (e.g. trying to enter a last date which is earlier than a first date)
+
+Some messages (warnings in particular) will slide away after a fixed time. Others will stay on screen until they are dismissed.
+To dismiss an error/warning message, just click on the message.

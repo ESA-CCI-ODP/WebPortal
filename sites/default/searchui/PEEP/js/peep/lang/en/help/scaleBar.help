@@ -1,0 +1,55 @@
+<!--MD-->
+###Using the Features of the Scale Bar
+
+The scale bar comprises three main zones:
+
+<img src='images/HELP/scaleBar.png' style='float: left; padding-right: 10px; ' />
+
+- ###Z-axis selector
+
+    If the layer in the viewport has a z-axis variable (height, depth, pressure etc.) then a pull-down select list is made visible
+    at the top of the Scale Bar, above the scale palette. Selecting a different value will cause the layer to be re-drawn using the
+    data from the new 'Z level". If there is no Z-axis data then this element will not be visible. this is, therefore, a quick 
+    indicator of whether the data has a Z dimension.
+    
+----
+
+- ###The Scale points and Palette
+    - **Palette**
+        This is the key to the layer colouring. The colour palette can be changed (if the data set provides alternatives). To change
+        the palette, click on the current colour bar and a pop up window will present the available selection. Clicking on your 
+        choice to will cause the layer to be re-drawn using the colour rasnge of the new palette.
+    
+    - **Scale Points**
+        Scale values are displayed at the minimum, maximum, one third and two thirds value positions. YHou can see that the The
+        maximum and minimum values are input boxes. These values can be set manually by clicking on the value displayed and entering
+        a new one.
+        *(See also the effect of the **Restore Original Scale** switch)*
+
+----
+
+- ###The Scale Controls
+    - **Auto Scale**
+        Clicking this link toggles the scale range between :
+        - **ON**  - Uses the highest and lowest values contained within the viewport as the max min scale values
+        - **OFF** - Uses the current max and min scale values for all future operations until auto-scaling is switched on again.
+        *(See also the effect of the* ***Restore Original Scale*** *switch)*
+
+    - **Log Scale**
+        Clicking this link toggles the scale range between :
+        - **ON**  - Uses a log scale if possible.
+        - **OFF** - Uses a linear scale
+        
+        If the currently visible data set has negative values, then the system will ignore clicks on the Log Scale switch 
+        and will pop up a warning message.
+
+    - **Restore Original Scale**
+    Regardless of the state of the Auto Scaling selection, if the Revert link is clicked, then auto-scaling will be switched off 
+    and the max and min values will revert to those supplied by the original layer data. *** N.B. These are the high and low values 
+    provided part of the header metadata for the data set and may not represent the actual highest and lowest values in the entire 
+    data set. This will depend on the data owners on-going maintenance of the data set.
+
+    - **Take a Snapshot**
+    Clicking this link will cause the visualiser to display a quick snapshot of the current view in a pop-up window. By right-
+    clicking on the image in the pop-up and selectign 'Save Image As ..." in the sub-menu, it is possible to save the current view
+    on systems which do not have a screen or window capture function.

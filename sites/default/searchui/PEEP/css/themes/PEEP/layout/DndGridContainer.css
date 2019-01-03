@@ -1,0 +1,15 @@
+/**********************************dojox.layout.dnd************************************/
+/* item-specific settings */
+.dojoDndItemOver		{/* background-color: #fff !important; */}
+.dojoDndItemSelected	{background: #fff; color: #444;}
+.dojoDndItemBefore		{border-top:    3px solid #d0103a;}
+.dojoDndItemAfter		{border-bottom: 3px solid #d0103a;}
+.dojoDndItemAnchor		{/*background: #fff; color: black;*/}
+.dojoDndItemOver.dojoDndItemSelected	{background: #f0f0f0;}
+.dojoDndItemOver.dojoDndItemAnchor		{background: #f0f0f0 !important;}
+/* avatar-specific settings */
+/*.dojoDndAvatarHeader	{display:none;} move to gridContainer */
+.dojoDndAvatarItem		{background: #eee;}
+.dndDropIndicator 		{border: 1px dashed #ffffff;
+                       cursor: default;
+                       background-color:#f0f0f0;}
